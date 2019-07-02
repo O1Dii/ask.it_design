@@ -126,29 +126,23 @@ a{
 }
 
 .header__title{
-  color: #ffffff;
+  color: white;
   font-size: 64px;
   margin-bottom: 0;
   text-align: center;
 }
 
 .header__subtitle{
-  color: #ffffff;
+  color: white;
   font-family: Lato;
   font-size: 46px;
   margin-top: 50px;
   text-align: center;
 }
 
-.header-lines{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header-lines div{
+.header__lines div{
   height: 10px;
   border-radius: 10px;
-  background-color: #ffffff;
 }
 
 .header-lines__first-line{
@@ -178,7 +172,7 @@ a{
 
 .header-btn{
   height: 76px;
-  color: #ffffff;
+  color: white;
   font-family: "Lato - Semibold";
   font-size: 33px;
   font-weight: 400;
@@ -190,13 +184,106 @@ a{
 }
 
 .transparent-btn{
-  border: 2px solid #f0f0f0;
+  border: 2px solid white;
   background-color: transparent;
   color: #f0f0f0;
 }
 
 .white-btn{
-  border: 2px solid #f0f0f0;
-  background-color: #f0f0f0;
+  border: 2px solid white;
+  background-color: white;
+  color: #037693;
+}
+
+.lines div{
+  height: 7px;
+  border-radius: 10px;
+}
+
+.left-lines{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-lines{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white-line{
+  background-color: white;
+}
+
+.blue-line{
+  background-color: #037693;
+}
+
+.lines__bigger-line{
+  width: 102px;
+}
+
+.lines__smaller-line{
+  width: 16px;
+  margin: auto 10px;
+}
+
+.how-it-works__wrapper{
+  margin: 156px auto 184px;
+}
+
+.how-it-works__title-container{
+  width: fit-content;
+  margin: auto;
+}
+
+.how-it-works__title{
+  font-size: 61px;
+  text-align: center;
+  color: #037693;
+  letter-spacing: 4.17px;
+  margin-bottom: 0;
+}
+
+.how-it-works__item{
+  margin: auto;
+}
+
+.how-it-works__item_selected .how-it-works-item__btn{
+  background-color: #037693;
+}
+
+.how-it-works__item_selected .how-it-works-item__btn .item-icon{
+  filter: invert(100%) sepia(0%) saturate(100%) brightness(10000%) contrast(100%);
+}
+
+.how-it-works__items-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 123px 10% 0;
+}
+
+.item-icon{
+  height: 92px;
+  width: 92px;
+}
+
+.how-it-works-item__btn-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.how-it-works-item__btn{
+  height: 162px;
+  width: 162px;
+  border: 2px solid #037693;
+  margin-bottom: 74px;
+}
+
+.how-it-works-item__text{
+  margin-top: 0;
+  text-align: center;
+  font-size: 32px;
   color: #037693;
 }
