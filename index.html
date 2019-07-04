@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ask.it</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
@@ -39,11 +40,15 @@
         <div class="header__wrapper">
             <div class="header__text">
                 <div class="header__titles-container">
-                    <h1 class="header__title">Live Interaction From Audience</h1>
-                    <div class="header__lines right-lines">
-                        <div class="header-lines__first-line white-line"></div>
-                        <div class="header-lines__second-line white-line"></div>
-                        <div class="header-lines__third-line white-line"></div>
+                    <div class="header__titles-lines-container">
+                        <h1 class="header__title">Live Interaction From Audience</h1>
+                        <div class="header__lines-container">
+                            <div class="header__lines right-lines">
+                                <div class="header-lines__first-line white-line"></div>
+                                <div class="header-lines__second-line white-line"></div>
+                                <div class="header-lines__third-line white-line"></div>
+                            </div>
+                        </div>
                     </div>
                     <h3 class="header__subtitle">Q&A, Polls and Slide-sharing for Events</h3>
                 </div>
@@ -55,8 +60,8 @@
                     </div>
                 </div>
             </div>
-            <div class="header__image">
-                <img src="img/phone.png">
+            <div class="header__image-container">
+                <img class="header__image" src="img/phone.png">
             </div>
         </div>
     </header>
@@ -108,10 +113,11 @@
         </div>
         <div id="interaction" class="interaction-block">
             <div class="interaction__wrapper">
-<!--                <div class="interaction__logo-container">-->
-<!--                    <div class="vertical-line"></div>-->
-
-<!--                </div>-->
+                <div class="interaction__logo interaction-logo">
+                    <div class="interaction-logo__dot dot"></div>
+                    <div class="interaction-logo__line line"></div>
+                    <h1 class="interaction-logo__text">Interaction</h1>
+                </div>
                 <div class="interaction__text-container">
                     <h1 class="interaction__title">Interact with thousand of audience in no time</h1>
                     <h3 class="interaction__subtitle">Its easier than ever</h3>
@@ -131,21 +137,15 @@
                 </div>
                 <div class="interaction__images">
                     <div class="first-rectangle-container rectangle-container">
-                        <img class="rounded-rectangle" src="img/rounded_rectangle.svg" alt="">
-                        <img class="rounded-rectangle-bg" src="img/rounded_rectangle_bg.svg" alt="">
-                        <img class="rounded-rectangle-icon" src="img/light-bulb.png" alt="icon">
+                        <img class="rounded-rectangle" src="img/ask-question-bg.png" alt="">
                         <p class="rounded-rectangle-text">Ask a Question Right Now</p>
                     </div>
                     <div class="second-rectangle-container rectangle-container">
-                        <img class="rounded-rectangle" src="img/rounded_rectangle.svg" alt="">
-                        <img class="rounded-rectangle-bg" src="img/rounded_rectangle_bg.svg" alt="">
-                        <img class="rounded-rectangle-icon" src="img/magnifying-glass.png" alt="icon">
+                        <img class="rounded-rectangle" src="img/choose-from-questions-bg.png" alt="">
                         <p class="rounded-rectangle-text">Choose From Questions</p>
                     </div>
                     <div class="third-rectangle-container rectangle-container">
-                        <img class="rounded-rectangle" src="img/rounded_rectangle.svg" alt="">
-                        <img class="rounded-rectangle-bg" src="img/rounded_rectangle_bg.svg" alt="">
-                        <img class="rounded-rectangle-icon" src="img/contract.png" alt="icon">
+                        <img class="rounded-rectangle" src="img/select-from-top-questions-bg.png" alt="">
                         <p class="rounded-rectangle-text">Select From Top Questions</p>
                     </div>
                 </div>
