@@ -275,10 +275,13 @@ a {
   height: -webkit-max-content;
   display: flex;
   position: relative;
-  padding: 0.5em 1em 0.5em 0.5em;
-  top: 6rem;
+  padding: 0.5em;
+  width: 16rem;
+  height: 2rem;
+  top: 6.5rem;
   left: 1rem;
-  border: 1px solid #ffffff; }
+  border: 1px solid #ffffff;
+  border-right: none; }
 
 .interaction-logo__text {
   display: inline;
@@ -286,10 +289,10 @@ a {
   color: #ffffff; }
 
 .interaction-logo__line {
-  margin: auto; }
+  margin: auto 0; }
 
 .interaction-logo__dot {
-  margin: auto; }
+  margin: auto 0; }
 
 .interaction__text-container {
   width: 60%; }
@@ -349,6 +352,24 @@ a {
 
 .orange-line {
   background-color: #f0a765; }
+
+.green-transparent-line {
+  background-color: #4ca59a50; }
+
+.red-transparent-line {
+  background-color: #f2625050; }
+
+.orange-transparent-line {
+  background-color: #f0a76550; }
+
+.green-text {
+  color: #4ca59a; }
+
+.red-text {
+  color: #f26250; }
+
+.orange-text {
+  color: #f0a765; }
 
 .interaction__text {
   color: #ffffff;
@@ -527,8 +548,74 @@ rectangle-container {
   transform: scale(1.2);
   z-index: 1; }
 
-.about-us {
-  height: 400px; }
+.about-us__wrapper {
+  width: 70%;
+  margin: auto auto 100px; }
+
+.about-us-content-container {
+  display: flex;
+  justify-content: space-between; }
+
+.about-us-logo {
+  width: 16rem;
+  top: 6.95rem;
+  left: -20%;
+  border-color: #037693; }
+
+.about-us-logo__dot {
+  background-color: #037693; }
+
+.about-us-logo__line {
+  background-color: #037693;
+  width: 40%; }
+
+.about-us-logo__text {
+  color: #037693; }
+
+.about-us-text__title, .about-us-text__subtitle {
+  margin: 0;
+  color: #037693; }
+
+.about-us-text__text {
+  margin-top: 30px;
+  color: #000000; }
+
+.about-us__circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.stats {
+  margin: auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.stats__outer-circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6rem;
+  margin: auto auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.stats__inner-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 6rem;
+  border: 1px solid #ffffff; }
+
+.stats__name {
+  white-space: nowrap;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.stats__numbers {
+  margin: 0;
+  font-size: 4rem;
+  text-align: center; }
 
 .footer {
   height: 400px;
