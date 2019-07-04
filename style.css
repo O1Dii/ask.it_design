@@ -194,20 +194,6 @@ a {
   height: 7px;
   border-radius: 10px; }
 
-.left-lines {
-  display: flex;
-  justify-content: flex-start; }
-
-.right-lines {
-  display: flex;
-  flex-direction: row-reverse; }
-
-.white-line {
-  background-color: white; }
-
-.blue-line {
-  background-color: #037693; }
-
 .lines__bigger-line {
   width: 102px; }
 
@@ -336,6 +322,34 @@ a {
   min-width: 4rem;
   vertical-align: middle; }
 
+.full-line {
+  margin-top: 2px;
+  height: 2px;
+  width: 100%; }
+
+.left-lines {
+  display: flex;
+  justify-content: flex-start; }
+
+.right-lines {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.white-line {
+  background-color: white; }
+
+.blue-line {
+  background-color: #037693; }
+
+.green-line {
+  background-color: #4ca59a; }
+
+.red-line {
+  background-color: #f26250; }
+
+.orange-line {
+  background-color: #f0a765; }
+
 .interaction__text {
   color: #ffffff;
   font-size: 1rem;
@@ -440,8 +454,78 @@ rectangle-container {
   object-fit: contain; }
 
 .events {
-  height: 400px;
   background-color: #e8e8e8; }
+
+.events__wrapper {
+  width: 85%;
+  margin: auto; }
+
+.events__title {
+  margin: 0; }
+
+.events__container {
+  padding: 100px;
+  display: flex;
+  justify-content: center; }
+
+.event {
+  margin: auto 3px;
+  background-color: #ffffff;
+  height: 26rem;
+  width: 22rem;
+  max-width: 30vw; }
+
+.external-event .event__title-container {
+  background-image: url("img/external-event.png"); }
+
+.interactive-event .event__title-container {
+  background-image: url("img/interactive-event.png"); }
+
+.internal-event .event__title-container {
+  background-image: url("img/internal-event.png"); }
+
+.event__title-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px; }
+
+.event__content-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%; }
+
+.event__title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  margin: 0; }
+
+.event__text {
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-align: center; }
+
+.event__icon {
+  object-fit: contain;
+  height: 4rem; }
+
+.event__button {
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  border-style: none;
+  padding: 0.2em 1em;
+  margin: 20px auto;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 1.5em; }
+
+.event:hover {
+  box-shadow: 0 0 30px grey;
+  transform: scale(1.2);
+  z-index: 1; }
 
 .about-us {
   height: 400px; }
