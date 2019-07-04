@@ -17,11 +17,11 @@
             </div>
             <ul class="nav__list nav-list">
                 <li class="nav-list__element"><a href="#header"><p>Home</p></a></li>
-                <li class="nav-list__element"><a href="#"><p>How it works</p></a></li>
-                <li class="nav-list__element"><a href="#"><p>Features</p></a></li>
-                <li class="nav-list__element"><a href="#"><p>Partners</p></a></li>
-                <li class="nav-list__element"><a href="#"><p>Events</p></a></li>
-                <li class="nav-list__element"><a href="#"><p>About us</p></a></li>
+                <li class="nav-list__element"><a href="#how-it-works"><p>How it works</p></a></li>
+                <li class="nav-list__element"><a href="#features"><p>Features</p></a></li>
+                <li class="nav-list__element"><a href="#partners"><p>Partners</p></a></li>
+                <li class="nav-list__element"><a href="#events"><p>Events</p></a></li>
+                <li class="nav-list__element"><a href="#about-us"><p>About us</p></a></li>
             </ul>
             <ul class="nav__log-reg log-reg">
                 <li class="log-reg__icon-text-container">
@@ -61,7 +61,7 @@
         </div>
     </header>
     <main>
-        <div class="how-it-works">
+        <div id="how-it-works" class="how-it-works">
             <div class="how-it-works__wrapper">
                 <div class="how-it-works__title-container">
                     <h1 class="how-it-works__title">How it works</h1>
@@ -106,8 +106,12 @@
                 </div>
             </div>
         </div>
-        <div class="interaction-block">
+        <div id="interaction" class="interaction-block">
             <div class="interaction__wrapper">
+<!--                <div class="interaction__logo-container">-->
+<!--                    <div class="vertical-line"></div>-->
+
+<!--                </div>-->
                 <div class="interaction__text-container">
                     <h1 class="interaction__title">Interact with thousand of audience in no time</h1>
                     <h3 class="interaction__subtitle">Its easier than ever</h3>
@@ -136,18 +140,103 @@
                         <img class="rounded-rectangle" src="img/rounded_rectangle.svg" alt="">
                         <img class="rounded-rectangle-bg" src="img/rounded_rectangle_bg.svg" alt="">
                         <img class="rounded-rectangle-icon" src="img/magnifying-glass.png" alt="icon">
-                        <p class="rounded-rectangle-text">Ask a Question Right Now</p>
+                        <p class="rounded-rectangle-text">Choose From Questions</p>
                     </div>
                     <div class="third-rectangle-container rectangle-container">
                         <img class="rounded-rectangle" src="img/rounded_rectangle.svg" alt="">
                         <img class="rounded-rectangle-bg" src="img/rounded_rectangle_bg.svg" alt="">
                         <img class="rounded-rectangle-icon" src="img/contract.png" alt="icon">
-                        <p class="rounded-rectangle-text">Ask a Question Right Now</p>
+                        <p class="rounded-rectangle-text">Select From Top Questions</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="features" class="features">
+            <div class="features__wrapper how-it-works__wrapper">
+                <div class="features__title-container how-it-works__title-container">
+                    <h1 class="features__title how-it-works__title">Features</h1>
+                    <div class="lines left-lines">
+                        <div class="lines__bigger-line blue-line"></div>
+                        <div class="lines__smaller-line blue-line"></div>
+                    </div>
+                </div>
+                <div class="features__items-container">
+                    <table class="features__items-table features-table">
+                        <tbody>
+                            <tr class="features-table__row features-table__row_first">
+                                <td class="features-table__item table-item ask-question">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/microphone.png">
+                                    </div>
+                                    <p class="table-item__text">Ask a question</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item raise-poll">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/bar-chart.png">
+                                    </div>
+                                    <p class="table-item__text">Raise a poll</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item view-statistics">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/insight.png">
+                                    </div>
+                                    <p class="table-item__text">View statistics</p>
+                                </td>
+                            </tr>
+                            <tr class="features-table__row features-table__row_second">
+                                <td class="features-table__horizontal-line table-horizontal-line">
+                                    <div class="table-horizontal-line__line blue-line"></div>
+                                </td>
+                                <td></td>
+                                <td class="features-table__horizontal-line table-horizontal-line">
+                                    <div class="table-horizontal-line__line blue-line"></div>
+                                </td>
+                                <td></td>
+                                <td class="features-table__horizontal-line table-horizontal-line">
+                                    <div class="table-horizontal-line__line blue-line"></div>
+                                </td>
+                            </tr>
+                            <tr class="features-table__row features-table__row_third">
+                                <td class="features-table__item table-item vote-question">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/medal.png">
+                                    </div>
+                                    <p class="table-item__text">Vote a question</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item create-survey">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/flag.png">
+                                    </div>
+                                    <p class="table-item__text">Create a survey</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item privacy-ensured">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/padlock.png">
+                                    </div>
+                                    <p class="table-item__text">Privacy ensured</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="partners" class="partners"></div>
+        <div id="events" class="events"></div>
+        <div id="about-us" class="about-us"></div>
     </main>
-    <footer></footer>
+    <footer class="footer"></footer>
 </body>
 </html>

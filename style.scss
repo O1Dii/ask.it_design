@@ -232,7 +232,7 @@ a{
 }
 
 .how-it-works__title-container{
-  width: fit-content;
+  width: -moz-fit-content;
   margin: auto;
 }
 
@@ -375,4 +375,43 @@ a{
   left: 80px;
   font-size: 32px;
   text-align: center;
+}
+
+.features__items-table{
+  margin: 80px auto 0;
+}
+
+.table-item__icon-container{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.table-item__icon{
+  max-height: 80px;
+  max-width: 80px;
+  margin: auto;
+}
+
+
+
+.partners{
+  height: 456px;
+  background-image: url("img/partners_bg.png");
+}
+
+.events{
+  height: 400px;
+  background-color: #e8e8e8;
+}
+
+.about-us{
+  height: 400px;
+}
+
+.footer{
+  height: 400px;
+  background-color: #0d0d0d;
 }
