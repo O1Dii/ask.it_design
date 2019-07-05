@@ -7,23 +7,25 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <nav class="nav">
+    <header class="nav">
         <div class="nav__bg nav-bg">
             <div class="nav-bg__black"></div>
             <div class="nav-bg__blue"></div>
         </div>
-        <div class="nav__wrapper nav-wrapper">
+        <div class="nav__wrapper">
             <div class="nav__icon-container">
                 <img class="nav__icon" src="img/ask_it_icon.png" alt="icon">
             </div>
-            <ul class="nav__list nav-list">
-                <li class="nav-list__element"><a href="#header"><p>Home</p></a></li>
-                <li class="nav-list__element"><a href="#how-it-works"><p>How it works</p></a></li>
-                <li class="nav-list__element"><a href="#features"><p>Features</p></a></li>
-                <li class="nav-list__element"><a href="#partners"><p>Partners</p></a></li>
-                <li class="nav-list__element"><a href="#events"><p>Events</p></a></li>
-                <li class="nav-list__element"><a href="#about-us"><p>About us</p></a></li>
-            </ul>
+            <nav class="nav__list-container">
+                <ul class="nav__list nav-list">
+                    <li class="nav-list__element"><a href="#header"><p>Home</p></a></li>
+                    <li class="nav-list__element"><a href="#how-it-works"><p>How it works</p></a></li>
+                    <li class="nav-list__element"><a href="#features"><p>Features</p></a></li>
+                    <li class="nav-list__element"><a href="#partners"><p>Partners</p></a></li>
+                    <li class="nav-list__element"><a href="#events"><p>Events</p></a></li>
+                    <li class="nav-list__element"><a href="#about-us"><p>About us</p></a></li>
+                </ul>
+            </nav>
             <ul class="nav__log-reg log-reg">
                 <li class="log-reg__icon-text-container">
                     <img class="log-reg__icon" src="img/sign-in.png" alt="icon">
@@ -35,41 +37,41 @@
                 </li>
             </ul>
         </div>
-    </nav>
-    <header id="header" class="header">
-        <div class="header__wrapper">
-            <div class="header__text">
-                <div class="header__titles-container">
-                    <div class="header__titles-lines-container">
-                        <h1 class="header__title">Live Interaction From Audience</h1>
-                        <div class="header__lines-container">
-                            <div class="header__lines">
-                                <div class="header-lines__first-line white-line"></div>
-                                <div class="header-lines__second-line white-line"></div>
-                                <div class="header-lines__third-line white-line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="header__subtitle">Q&A, Polls and Slide-sharing for Events</h3>
-                </div>
-                <div class="header__buttons header-buttons">
-                    <button class="header-buttons__create-event-btn transparent-btn header-btn">Create a event</button>
-                    <div class="header__other-buttons header-other-buttons">
-                        <button class="header-other-buttons__join-event-btn transparent-btn header-btn">Join event</button>
-                        <button class="header-other-buttons__type-code-btn white-btn header-btn">type code</button>
-                    </div>
-                </div>
-            </div>
-            <div class="header__image-container">
-                <img class="header__image" src="img/phone.png">
-            </div>
-        </div>
     </header>
     <main>
+        <div id="header" class="header">
+            <div class="header__wrapper">
+                <div class="header__text">
+                    <div class="header__titles-container">
+                        <div class="header__titles-lines-container">
+                            <h1 class="header__title">Live Interaction From Audience</h1>
+                            <div class="header__lines-container">
+                                <div class="header__lines header-lines">
+                                    <div class="header-lines__first-line white-line"></div>
+                                    <div class="header-lines__second-line white-line"></div>
+                                    <div class="header-lines__third-line white-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="header__subtitle">Q&A, Polls and Slide-sharing for Events</h3>
+                    </div>
+                    <div class="header__buttons header-buttons">
+                        <button class="header-buttons__create-event-button transparent-button header-button">Create a event</button>
+                        <div class="header__other-buttons header-other-buttons">
+                            <button class="header-other-buttons__join-event-button transparent-button header-button">Join event</button>
+                            <button class="header-other-buttons__type-code-button white-button header-button">type code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__image-container">
+                    <img class="header__image" src="img/phone.png">
+                </div>
+            </div>
+        </div>
         <div id="how-it-works" class="how-it-works">
-            <div class="how-it-works__wrapper">
-                <div class="how-it-works__title-container">
-                    <h1 class="how-it-works__title">How it works</h1>
+            <div class="how-it-works__wrapper wrapper">
+                <div class="how-it-works__title-container title-container">
+                    <h1 class="how-it-works__title title">How it works</h1>
                     <div class="lines left-lines">
                         <div class="lines__bigger-line blue-line"></div>
                         <div class="lines__smaller-line blue-line"></div>
@@ -77,32 +79,32 @@
                 </div>
                 <div class="how-it-works__items-container">
                     <div class="how-it-works__item how-it-works__item_selected how-it-works-item">
-                        <div class="how-it-works-item__btn-container">
-                            <button class="how-it-works-item__btn white-btn">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
                                 <img class="item-icon" src="img/mobile.svg" alt="icon">
                             </button>
                         </div>
                         <p class="how-it-works-item__text">Create a FREE account with us</p>
                     </div>
                     <div class="how-it-works__item">
-                        <div class="how-it-works-item__btn-container">
-                            <button class="how-it-works-item__btn white-btn">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
                                 <img class="item-icon" src="img/discuss-issue.svg" alt="icon">
                             </button>
                         </div>
                         <p class="how-it-works-item__text">Create your own event or Q&A session</p>
                     </div>
                     <div class="how-it-works__item">
-                        <div class="how-it-works-item__btn-container">
-                            <button class="how-it-works-item__btn white-btn">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
                                 <img class="item-icon" src="img/blackberry-qr-code-variant.svg" alt="icon">
                             </button>
                         </div>
                         <p class="how-it-works-item__text">Share your meeting code with the participants</p>
                     </div>
                     <div class="how-it-works__item">
-                        <div class="how-it-works-item__btn-container">
-                            <button class="how-it-works-item__btn white-btn">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
                                 <img class="item-icon" src="img/favorites-button.svg" alt="icon">
                             </button>
                         </div>
@@ -111,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div id="interaction" class="interaction-block">
+        <div id="interaction" class="interaction">
             <div class="interaction__wrapper">
                 <div class="interaction__logo interaction-logo">
                     <div class="interaction-logo__dot dot"></div>
@@ -152,9 +154,9 @@
             </div>
         </div>
         <div id="features" class="features">
-            <div class="features__wrapper how-it-works__wrapper">
-                <div class="features__title-container how-it-works__title-container">
-                    <h1 class="features__title how-it-works__title">Features</h1>
+            <div class="features__wrapper wrapper">
+                <div class="features__title-container title-container">
+                    <h1 class="features__title title">Features</h1>
                     <div class="lines left-lines">
                         <div class="lines__bigger-line blue-line"></div>
                         <div class="lines__smaller-line blue-line"></div>
@@ -235,8 +237,8 @@
         </div>
         <div id="partners" class="partners">
             <div class="partners__wrapper">
-                <div class="partners__title-container how-it-works__title-container">
-                    <h1 class="partners__title how-it-works__title">Partners</h1>
+                <div class="partners__title-container title-container">
+                    <h1 class="partners__title title">Partners</h1>
                     <div class="lines right-lines">
                         <div class="lines__bigger-line white-line"></div>
                         <div class="lines__smaller-line white-line"></div>
@@ -259,8 +261,8 @@
         </div>
         <div id="events" class="events">
             <div class="events__wrapper">
-                <div class="events__title-container how-it-works__title-container">
-                    <h1 class="events__title how-it-works__title">Events</h1>
+                <div class="events__title-container title-container">
+                    <h1 class="events__title title">Events</h1>
                     <div class="lines left-lines">
                         <div class="lines__bigger-line blue-line"></div>
                         <div class="lines__smaller-line blue-line"></div>
@@ -269,8 +271,8 @@
                 <div class="events__container">
                     <div class="event external-event">
                         <div class="event__title-container">
-                            <p class="event__title">EXTERNAL</p>
-                            <h1 class="event__title">EVENT</h1>
+                            <p class="event__title-first">EXTERNAL</p>
+                            <h1 class="event__title-second">EVENT</h1>
                         </div>
                         <div class="full-line green-line"></div>
                         <div class="event__content-container">
@@ -285,8 +287,8 @@
                     </div>
                     <div class="event interactive-event">
                         <div class="event__title-container">
-                            <p class="event__title">INTERACTIVE</p>
-                            <h1 class="event__title">EVENT</h1>
+                            <p class="event__title-first">INTERACTIVE</p>
+                            <h1 class="event__title-second">EVENT</h1>
                         </div>
                         <div class="full-line red-line"></div>
                         <div class="event__content-container">
@@ -301,8 +303,8 @@
                     </div>
                     <div class="event internal-event">
                         <div class="event__title-container">
-                            <p class="event__title">INTERNAL</p>
-                            <h1 class="event__title">EVENT</h1>
+                            <p class="event__title-first">INTERNAL</p>
+                            <h1 class="event__title-second">EVENT</h1>
                         </div>
                         <div class="full-line orange-line"></div>
                         <div class="event__content-container">
@@ -319,20 +321,20 @@
             </div>
         </div>
         <div id="about-us" class="about-us">
-            <div class="about-us__wrapper">
+            <div class="about-us__wrapper wrapper">
                 <div class="about-us__logo about-us-logo interaction-logo">
                     <div class="about-us-logo__dot interaction-logo__dot dot"></div>
                     <div class="about-us-logo__line interaction-logo__line line"></div>
                     <h1 class="about-us-logo__text interaction-logo__text">Know us</h1>
                 </div>
-                <div class="about-us__title-container how-it-works__title-container">
-                    <h1 class="about-us__title how-it-works__title">About us</h1>
+                <div class="about-us__title-container title-container">
+                    <h1 class="about-us__title title">About us</h1>
                     <div class="lines right-lines">
                         <div class="lines__bigger-line blue-line"></div>
                         <div class="lines__smaller-line blue-line"></div>
                     </div>
                 </div>
-                <div class="about-us-content-container">
+                <div class="about-us__content-container">
                     <div class="about-us__text-container about-us-text">
                         <h1 class="about-us-text__title interaction__title">Who we are?</h1>
                         <h3 class="about-us-text__subtitle interaction__subtitle">What we can do for you</h3>
