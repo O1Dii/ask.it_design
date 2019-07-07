@@ -1,5 +1,5 @@
 html {
-  font-size: 17px; }
+  font-size: 16px; }
 
 body {
   width: 99.2vw; }
@@ -87,7 +87,7 @@ button:focus, button:active {
     margin: auto; }
 
 .header {
-  height: 1019.2px;
+  height: 58rem;
   width: 100%;
   background-image: url("img/header_bg.png");
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ button:focus, button:active {
   justify-content: center; }
   .header__wrapper {
     height: 100%;
-    width: 90%;
+    width: 85%;
     position: relative;
     top: 25%;
     display: flex;
@@ -107,8 +107,8 @@ button:focus, button:active {
     width: 32%; }
   .header__image {
     width: 100%;
-    max-width: 449px;
-    max-height: 915px; }
+    max-width: 26.94rem;
+    max-height: 54.9rem; }
   .header__text {
     width: 62%; }
   .header__titles-container {
@@ -160,7 +160,7 @@ button:focus, button:active {
     width: 7.28rem; }
 
 .header-buttons {
-  margin-top: 10rem;
+  margin-top: 13rem;
   display: flex;
   justify-content: center; }
   .header-buttons__create-event-button {
@@ -256,12 +256,12 @@ button:focus, button:active {
   background-size: cover;
   max-height: 120rem; }
   .interaction__wrapper {
-    width: 80%;
+    width: 85%;
     margin: 0 auto 0 0;
     display: flex;
     justify-content: space-between; }
   .interaction__text-container {
-    width: 45%; }
+    width: 60%; }
   .interaction__title {
     color: #ffffff;
     width: 60%;
@@ -373,28 +373,27 @@ button:focus, button:active {
 .orange-text {
   color: #f0a765; }
 
-rectangle-container {
-  display: flex;
-  flex-direction: column; }
+.interaction__images {
+  width: 40%; }
 
 .second-rectangle-container {
   position: relative;
-  top: -275px;
-  left: 175px; }
+  top: -13.75rem;
+  left: 8.75rem; }
 
 .third-rectangle-container {
   position: relative;
-  top: -545px; }
+  top: -27.25rem; }
 
 .rounded-rectangle {
-  height: 300px;
-  width: 300px; }
+  height: 15rem;
+  width: 15rem; }
 
 .rounded-rectangle-text {
   position: relative;
-  top: -180px;
-  width: 180px;
-  left: 62px;
+  top: -9rem;
+  width: 9rem;
+  left: 3.1rem;
   font-size: 1.28rem;
   text-align: center; }
 
@@ -476,7 +475,7 @@ rectangle-container {
 .event {
   margin: auto 3px;
   background-color: #ffffff;
-  min-width: 467.2px; }
+  min-width: 25vw; }
   .event__title-container {
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,7 +501,7 @@ rectangle-container {
     text-transform: uppercase;
     font-weight: 700; }
   .event__text {
-    font-size: 1em;
+    font-size: 1rem;
     margin-bottom: 5px;
     text-align: center;
     font-weight: 300;
@@ -536,20 +535,24 @@ rectangle-container {
   background-image: url("img/internal-event.png"); }
 
 .about-us__wrapper {
-  width: 70%;
-  margin: auto auto 100px; }
+  width: 80%;
+  margin: auto 5% 100px 15%; }
 
 .about-us__title-container {
   margin: 70px auto; }
 
+.about-us__text-container {
+  width: 48%; }
+
 .about-us__circles {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-start;
+  padding-top: 2rem;
+  margin-left: 20px; }
 
 .about-us__content-container {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
 
 .about-us-logo {
   width: 16rem;
@@ -568,15 +571,23 @@ rectangle-container {
   margin: 0;
   color: #037693; }
 
+.about-us-text__title {
+  font-size: 3.32rem; }
+
 .about-us-text__subtitle {
-  letter-spacing: 0.1rem; }
+  font-size: 2.1rem; }
+
+.about-us-text__line {
+  width: 30%; }
 
 .about-us-text__text {
-  margin-top: 30px;
+  line-height: 28px;
+  font-size: 1rem;
+  margin-top: 20px;
   color: #000000; }
 
 .stats {
-  margin: auto 20px;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -595,13 +606,13 @@ rectangle-container {
     border: 1px solid #ffffff; }
   .stats__name {
     white-space: nowrap;
-    margin: 20px auto;
-    font-size: 1.32rem;
+    margin: 25px auto;
+    font-size: 1.4rem;
     text-align: center;
-    font-weight: 300; }
+    font-weight: 200; }
   .stats__numbers {
-    margin: 0;
-    font-size: 2.76rem;
+    margin: 10px 0 0;
+    font-size: 3.32rem;
     text-align: center;
     font-weight: 400; }
 

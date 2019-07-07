@@ -1,5 +1,5 @@
 html{
-  font-size: 17px;
+  font-size: 16px;
 }
 
 body{
@@ -119,7 +119,7 @@ button:focus, button:active{
 }
 
 .header{
-  height: 1019.2px;
+  height: 58rem;
   width: 100%;
   background-image: url("img/header_bg.png");
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@ button:focus, button:active{
 
   &__wrapper{
     height: 100%;
-    width: 90%;
+    width: 85%;
     position: relative;
     top: 25%;
     display: flex;
@@ -144,8 +144,8 @@ button:focus, button:active{
 
   &__image{
     width: 100%;
-    max-width: 449px;
-    max-height: 915px;
+    max-width: 26.94rem;
+    max-height: 54.9rem;
   }
 
   &__text{
@@ -225,7 +225,7 @@ button:focus, button:active{
 }
 
 .header-buttons{
-  margin-top: 10rem;
+  margin-top: 13rem;
   display: flex;
   justify-content: center;
 
@@ -350,14 +350,14 @@ button:focus, button:active{
   max-height: 120rem;
 
   &__wrapper{
-    width: 80%;
+    width: 85%;
     margin: 0 auto 0 0;
     display: flex;
     justify-content: space-between;
   }
 
   &__text-container{
-    width: 45%;
+    width: 60%;
   }
 
   &__title{
@@ -504,32 +504,31 @@ button:focus, button:active{
   color: #f0a765;
 }
 
-rectangle-container{
-  display: flex;
-  flex-direction: column;
+.interaction__images{
+  width: 40%;
 }
 
 .second-rectangle-container{
   position: relative;
-  top: -275px;
-  left: 175px;
+  top: -13.75rem;
+  left: 8.75rem;
 }
 
 .third-rectangle-container{
   position: relative;
-  top: -545px;
+  top: -27.25rem;
 }
 
 .rounded-rectangle{
-  height: 300px;
-  width: 300px;
+  height: 15rem;
+  width: 15rem;
 }
 
 .rounded-rectangle-text{
   position: relative;
-  top: -180px;
-  width: 180px;
-  left: 62px;
+  top: -9rem;
+  width: 9rem;
+  left: 3.1rem;
   font-size: 1.28rem;
   text-align: center;
 }
@@ -652,7 +651,7 @@ rectangle-container{
   margin: auto 3px;
   background-color: #ffffff;
   //height: 516.8px;
-  min-width: 467.2px;
+  min-width: 25vw;
   //max-width: 25vw;
 
   &__title-container{
@@ -691,7 +690,7 @@ rectangle-container{
   }
 
   &__text{
-    font-size: 1em;
+    font-size: 1rem;
     margin-bottom: 5px;
     text-align: center;
     //font-family: Lato;
@@ -739,22 +738,28 @@ rectangle-container{
 
 .about-us{
   &__wrapper{
-    width: 70%;
-    margin: auto auto 100px;
+    width: 80%;
+    margin: auto 5% 100px 15%;
   }
 
   &__title-container{
     margin: 70px auto;
   }
 
+  &__text-container{
+    width: 48%;
+  }
+
   &__circles{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    margin-left: 20px;
   }
   &__content-container{
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-evenly;
   }
 }
 
@@ -784,18 +789,29 @@ rectangle-container{
     color: #037693;
   }
 
+  &__title{
+    font-size: 3.32rem;
+  }
+
   &__subtitle{
-    letter-spacing: 0.1rem;
+    font-size: 2.1rem;
+    //letter-spacing: 0.1rem;
+  }
+
+  &__line{
+    width: 30%;
   }
 
   &__text{
-    margin-top: 30px;
+    line-height: 28px;
+    font-size: 1rem;
+    margin-top: 20px;
     color: #000000;
   }
 }
 
 .stats{
-  margin: auto 20px;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -819,16 +835,16 @@ rectangle-container{
 
   &__name{
     white-space: nowrap;
-    margin: 20px auto;
-    font-size: 1.32rem;
+    margin: 25px auto;
+    font-size: 1.4rem;
     text-align: center;
     //font-family: Lato;
-    font-weight: 300;
+    font-weight: 200;
   }
 
   &__numbers{
-    margin: 0;
-    font-size: 2.76rem;
+    margin: 10px 0 0;
+    font-size: 3.32rem;
     text-align: center;
     //font-family: Lato;
     font-weight: 400;
