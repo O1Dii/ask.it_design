@@ -1,5 +1,5 @@
 html {
-  font-size: 20px; }
+  font-size: 17px; }
 
 body {
   width: 99.2vw; }
@@ -44,7 +44,8 @@ button:focus, button:active {
   min-width: 60%;
   display: flex;
   justify-content: space-between;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   .nav-list__element {
     display: inline-block;
     color: #f0f0f0;
@@ -57,7 +58,7 @@ button:focus, button:active {
   .nav-list__element > a {
     height: 100%;
     display: flex;
-    margin: auto 5px;
+    margin: auto 0.5rem;
     align-content: center; }
   .nav-list__element > a > p {
     width: content-box;
@@ -605,5 +606,63 @@ rectangle-container {
     font-weight: 400; }
 
 .footer {
-  height: 400px;
   background-color: #0d0d0d; }
+  .footer__wrapper {
+    width: 80%;
+    margin: auto; }
+  .footer__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 5rem;
+    padding-top: 5rem; }
+  .footer__first-col {
+    width: 19%; }
+  .footer__first-col, .footer__second-col, .footer__third-col, .footer__fourth-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .footer__second-col, .footer__third-col, .footer__fourth-col {
+    margin-top: 4.9rem;
+    justify-content: flex-start; }
+  .footer__fourth-col {
+    align-items: center; }
+  .footer__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .footer__icon {
+    height: 30%;
+    margin: auto; }
+  .footer__text-under-icon {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem; }
+  .footer__list-item {
+    color: #ffffff;
+    font-size: 0.88rem; }
+  .footer__list {
+    list-style: none;
+    padding: 0; }
+  .footer__title {
+    color: #ffffff; }
+  .footer__subtitle {
+    font-size: 0.88rem;
+    color: #ffffff; }
+  .footer__email-address {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    background-image: url("img/Envelope.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 20px;
+    text-align: center; }
+  .footer__rights-reserved {
+    color: #ffffff;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center; }
+  .footer__rights-reserved-container {
+    padding: 1rem; }
