@@ -558,7 +558,7 @@ button:focus, button:active {
   margin: auto 5% 100px 15%; }
 
 .about-us__title-container {
-  margin: 70px auto; }
+  margin: 70px 55% 70px 35%; }
 
 .about-us__text-container {
   width: 48%; }
