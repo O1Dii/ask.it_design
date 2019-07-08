@@ -1,122 +1,3 @@
-.about-us__wrapper {
-  width: 80%;
-  margin: auto 5% 100px 15%; }
-
-.about-us__title-container {
-  margin: 70px 55% 70px 35%; }
-
-.about-us__text-container {
-  width: 48%; }
-
-.about-us__circles {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 2rem;
-  margin-left: 20px; }
-
-.about-us__content-container {
-  display: flex; }
-
-.about-us__circle-container {
-  margin: 0 20px; }
-
-.about-us-logo {
-  width: 16rem;
-  top: 6.95rem;
-  left: -20%;
-  border-color: #037693; }
-  .about-us-logo__dot {
-    background-color: #037693; }
-  .about-us-logo__line {
-    background-color: #037693;
-    width: 40%; }
-  .about-us-logo__text {
-    color: #037693; }
-
-.interaction {
-  background-color: #037693;
-  background-size: cover; }
-  .interaction__wrapper {
-    width: 85%;
-    margin: 0 auto 0 0;
-    display: flex;
-    justify-content: space-between; }
-    @media only screen and (max-width: 720px) {
-      .interaction__wrapper {
-        margin: auto;
-        display: flex;
-        flex-direction: column-reverse; } }
-  .interaction__text-container {
-    width: 60%; }
-    @media only screen and (max-width: 720px) {
-      .interaction__text-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; } }
-  .interaction__title, .about-us-text__title {
-    color: #ffffff;
-    width: 60%;
-    min-width: 18.8rem;
-    font-size: 2.988rem;
-    font-weight: 700;
-    margin-bottom: 0; }
-    @media only screen and (max-width: 720px) {
-      .interaction__title, .about-us-text__title {
-        width: 100%;
-        text-align: center;
-        font-size: 1.2rem; } }
-  .interaction__subtitle, .about-us-text__subtitle {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 500; }
-    @media only screen and (max-width: 720px) {
-      .interaction__subtitle, .about-us-text__subtitle {
-        margin: 15px auto 10px;
-        font-size: 1rem; } }
-  .interaction__text, .about-us-text__text {
-    color: #ffffff;
-    font-size: .85rem;
-    letter-spacing: .25px;
-    font-weight: 300;
-    line-height: 33.33px; }
-    @media only screen and (max-width: 720px) {
-      .interaction__text, .about-us-text__text {
-        display: inline;
-        margin: 0; } }
-  .interaction__images {
-    height: 25rem;
-    margin: 100px 100px;
-    width: 40%; }
-    @media only screen and (max-width: 720px) {
-      .interaction__images {
-        width: 100%;
-        height: fit-content;
-        margin: 0;
-        display: flex;
-        justify-content: space-evenly; } }
-
-.about-us-text__title {
-  font-size: 3.32rem; }
-
-.about-us-text__subtitle {
-  font-size: 2.1rem; }
-
-.about-us-text__title, .about-us-text__subtitle {
-  margin: 0;
-  color: #037693; }
-
-.about-us-text__line {
-  width: 30%; }
-
-.about-us-text__text {
-  line-height: 28px;
-  font-size: 1rem;
-  margin-top: 20px;
-  color: #000000; }
-
 .audience-interaction {
   width: 100%;
   background-image: url("img/header_bg.png");
@@ -657,7 +538,7 @@ button:focus, button:active {
         display: flex;
         flex-direction: column;
         justify-content: center; } }
-  .interaction__title, .about-us-text__title {
+  .interaction__title {
     color: #ffffff;
     width: 60%;
     min-width: 18.8rem;
@@ -665,38 +546,48 @@ button:focus, button:active {
     font-weight: 700;
     margin-bottom: 0; }
     @media only screen and (max-width: 720px) {
-      .interaction__title, .about-us-text__title {
+      .interaction__title {
         width: 100%;
         text-align: center;
         font-size: 1.2rem; } }
-  .interaction__subtitle, .about-us-text__subtitle {
+  .interaction__subtitle {
     display: inline-block;
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: 500; }
     @media only screen and (max-width: 720px) {
-      .interaction__subtitle, .about-us-text__subtitle {
+      .interaction__subtitle {
         margin: 15px auto 10px;
         font-size: 1rem; } }
-  .interaction__text, .about-us-text__text {
+  .interaction__text {
     color: #ffffff;
     font-size: .85rem;
     letter-spacing: .25px;
     font-weight: 300;
     line-height: 33.33px; }
     @media only screen and (max-width: 720px) {
-      .interaction__text, .about-us-text__text {
+      .interaction__text {
         display: inline;
-        margin: 0; } }
+        text-align: center;
+        line-height: initial;
+        letter-spacing: initial;
+        margin: 30px auto; } }
+  .interaction__inner-text-span {
+    display: block;
+    margin-bottom: 12px; }
+    @media only screen and (max-width: 720px) {
+      .interaction__inner-text-span {
+        display: initial;
+        margin-bottom: 0; } }
   .interaction__images {
     height: 25rem;
     margin: 100px 100px;
     width: 40%; }
     @media only screen and (max-width: 720px) {
       .interaction__images {
+        margin: 50px 0 0;
         width: 100%;
         height: fit-content;
-        margin: 0;
         display: flex;
         justify-content: space-evenly; } }
 
@@ -928,3 +819,144 @@ button:focus, button:active {
   @media only screen and (max-width: 720px) {
     .third-rectangle-container {
       position: static; } }
+
+.about-us__wrapper {
+  width: 80%;
+  margin: auto 5% 100px 15%; }
+
+.about-us__title-container {
+  margin: 70px 55% 70px 35%; }
+
+.about-us__text-container {
+  width: 48%; }
+
+.about-us__circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2rem;
+  margin-left: 20px; }
+
+.about-us__content-container {
+  display: flex; }
+
+.about-us__circle-container {
+  margin: 0 20px; }
+
+.about-us__logo {
+  width: 16rem;
+  top: 6.95rem;
+  left: -20%; }
+
+.about-us-logo {
+  border-color: #037693; }
+  .about-us-logo__dot {
+    background-color: #037693; }
+  .about-us-logo__line {
+    background-color: #037693;
+    width: 40%; }
+  .about-us-logo__text {
+    color: #037693; }
+
+.interaction {
+  background-color: #037693;
+  background-size: cover; }
+  .interaction__wrapper {
+    width: 85%;
+    margin: 0 auto 0 0;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 720px) {
+      .interaction__wrapper {
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse; } }
+  .interaction__text-container {
+    width: 60%; }
+    @media only screen and (max-width: 720px) {
+      .interaction__text-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; } }
+  .interaction__title {
+    color: #ffffff;
+    width: 60%;
+    min-width: 18.8rem;
+    font-size: 2.988rem;
+    font-weight: 700;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 720px) {
+      .interaction__title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem; } }
+  .interaction__subtitle {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500; }
+    @media only screen and (max-width: 720px) {
+      .interaction__subtitle {
+        margin: 15px auto 10px;
+        font-size: 1rem; } }
+  .interaction__text {
+    color: #ffffff;
+    font-size: .85rem;
+    letter-spacing: .25px;
+    font-weight: 300;
+    line-height: 33.33px; }
+    @media only screen and (max-width: 720px) {
+      .interaction__text {
+        display: inline;
+        text-align: center;
+        line-height: initial;
+        letter-spacing: initial;
+        margin: 30px auto; } }
+  .interaction__inner-text-span {
+    display: block;
+    margin-bottom: 12px; }
+    @media only screen and (max-width: 720px) {
+      .interaction__inner-text-span {
+        display: initial;
+        margin-bottom: 0; } }
+  .interaction__images {
+    height: 25rem;
+    margin: 100px 100px;
+    width: 40%; }
+    @media only screen and (max-width: 720px) {
+      .interaction__images {
+        margin: 50px 0 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-evenly; } }
+
+.about-us-text__title {
+  color: #ffffff;
+  width: 60%;
+  min-width: 18.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 3.32rem; }
+
+.about-us-text__subtitle {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.1rem; }
+
+.about-us-text__title, .about-us-text__subtitle {
+  margin: 0;
+  color: #037693; }
+
+.about-us-text__line {
+  width: 30%; }
+
+.about-us-text__text {
+  letter-spacing: .25px;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #000000; }
