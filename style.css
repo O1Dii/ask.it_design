@@ -26,7 +26,7 @@ button:focus, button:active {
     justify-content: space-between;
     margin: auto 10%; }
   .nav__icon-container {
-    min-width: 20%;
+    min-width: 15%;
     margin: 18px 0 12px; }
 
 .nav-bg {
@@ -43,24 +43,24 @@ button:focus, button:active {
   align-content: center;
   min-width: 60%;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0; }
   .nav-list__element {
     display: inline-block;
     color: #f0f0f0;
+    margin: auto 1vw;
     font-size: 1.56rem;
     text-align: center;
     vertical-align: bottom;
     border-top: 2px solid #000000;
     height: 100%;
     box-sizing: border-box; }
-  .nav-list__element > a {
+  .nav-list__element > .nav-list__href {
     height: 100%;
     display: flex;
-    margin: auto 0.5rem;
+    margin: auto .5rem;
     align-content: center; }
-  .nav-list__element > a > p {
+  .nav-list__element > .nav-list__href > .nav-list__text {
     width: content-box;
     margin: auto; }
   .nav-list__element:hover, .nav-list__element:focus {
@@ -70,18 +70,20 @@ button:focus, button:active {
     box-sizing: border-box; }
 
 .log-reg {
-  min-width: 20%;
+  min-width: 15%;
   display: flex;
   justify-content: space-between;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   .log-reg__icon-text-container {
     display: inline-block;
     margin: auto; }
   .log-reg__text {
     color: #f0f0f0;
-    font-size: 0.76rem;
+    font-size: .76rem;
     margin: 0; }
   .log-reg__icon {
+    height: 1.7rem;
     display: flex;
     justify-self: center;
     margin: auto; }
@@ -136,28 +138,29 @@ button:focus, button:active {
   .header__lines {
     display: flex;
     justify-content: flex-end; }
-  .header__lines div {
-    height: 10px;
-    border-radius: 10px; }
 
 .header-lines__first-line {
-  width: 0.48rem;
+  height: 10px;
+  border-radius: 10px;
+  width: .48rem;
   margin-right: 1.12rem; }
 
 .header-lines__second-line {
-  width: 0.96rem;
+  height: 10px;
+  border-radius: 10px;
+  width: .96rem;
   margin: 0; }
 
 .header-lines__third-line {
+  height: 10px;
+  border-radius: 10px;
   width: 13.52rem;
-  margin-left: 0.56rem; }
+  margin-left: .56rem; }
 
 .header-other-buttons {
   display: flex; }
   .header-other-buttons__type-code-button {
     font-size: 1.12rem; }
-  .header-other-buttons__join-event-button, .header-other-buttons__type-code-button {
-    width: 7.28rem; }
 
 .header-buttons {
   margin-top: 13rem;
@@ -167,6 +170,7 @@ button:focus, button:active {
     margin-right: 7%; }
 
 .header-button {
+  white-space: nowrap;
   height: 3.04rem;
   color: white;
   font-size: 1.32rem;
@@ -193,8 +197,8 @@ button:focus, button:active {
 .lines__smaller-line {
   height: 7px;
   border-radius: 10px;
-  width: 0.64rem;
-  margin: auto 0.4rem; }
+  width: .64rem;
+  margin: auto .4rem; }
 
 .wrapper {
   margin: 124.8px auto 147.2px; }
@@ -277,11 +281,11 @@ button:focus, button:active {
   .interaction__text {
     color: #ffffff;
     font-size: .85rem;
-    letter-spacing: 0.25px;
+    letter-spacing: .25px;
     font-weight: 300;
     line-height: 33.33px; }
   .interaction__images {
-    height: 580px;
+    height: 25rem;
     margin: 100px 100px; }
 
 .interaction-logo {
@@ -293,7 +297,7 @@ button:focus, button:active {
   height: -webkit-max-content;
   display: flex;
   position: relative;
-  padding: 0.5em;
+  padding: .5em;
   width: 16rem;
   height: 2rem;
   top: 6.5rem;
@@ -306,7 +310,7 @@ button:focus, button:active {
     color: #ffffff;
     font-size: 1.8rem;
     font-weight: 300;
-    letter-spacing: 0.2rem;
+    letter-spacing: .2rem;
     vertical-align: super; }
   .interaction-logo__line, .interaction-logo__dot {
     margin: auto 0; }
@@ -393,8 +397,9 @@ button:focus, button:active {
   position: relative;
   top: -9rem;
   width: 9rem;
+  height: 3rem;
   left: 3.1rem;
-  font-size: 1.28rem;
+  font-size: 1.2rem;
   text-align: center; }
 
 .features__items-table {
@@ -506,7 +511,7 @@ button:focus, button:active {
     text-align: center;
     font-weight: 300;
     line-height: 33.33px;
-    letter-spacing: 0.27px; }
+    letter-spacing: .27px; }
   .event__icon {
     object-fit: contain;
     height: 3.5rem; }
@@ -515,7 +520,7 @@ button:focus, button:active {
     width: -moz-max-content;
     width: -webkit-max-content;
     border-style: none;
-    padding: 0.2em 1em;
+    padding: .2em 1em;
     margin: 20px auto;
     border-radius: 100px;
     color: #ffffff;
@@ -650,14 +655,14 @@ button:focus, button:active {
     font-size: 1rem; }
   .footer__list-item {
     color: #ffffff;
-    font-size: 0.88rem; }
+    font-size: .88rem; }
   .footer__list {
     list-style: none;
     padding: 0; }
   .footer__title {
     color: #ffffff; }
   .footer__subtitle {
-    font-size: 0.88rem;
+    font-size: .88rem;
     color: #ffffff; }
   .footer__email-address {
     background-color: transparent;

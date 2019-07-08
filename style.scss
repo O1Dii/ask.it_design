@@ -35,7 +35,7 @@ button:focus, button:active{
   }
 
   &__icon-container{
-    min-width: 20%;
+    min-width: 15%;
     margin: 18px 0 12px;
   }
 }
@@ -59,13 +59,13 @@ button:focus, button:active{
   align-content: center;
   min-width: 60%;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   &__element{
     display: inline-block;
     color: #f0f0f0;
+    margin: auto 1vw;
     font-size: 1.56rem;
     text-align: center;
     vertical-align: bottom;
@@ -74,14 +74,14 @@ button:focus, button:active{
     box-sizing: border-box;
   }
 
-  &__element > a{
+  &__element > &__href{
     height: 100%;
     display: flex;
-    margin: auto 0.5rem;
+    margin: auto .5rem;
     align-content: center;
   }
 
-  &__element > a > p{
+  &__element > &__href > &__text{
     width: content-box;
     margin: auto;
   }
@@ -95,10 +95,11 @@ button:focus, button:active{
 }
 
 .log-reg{
-  min-width: 20%;
+  min-width: 15%;
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
 
   &__icon-text-container{
     display: inline-block;
@@ -107,11 +108,12 @@ button:focus, button:active{
 
   &__text{
     color: #f0f0f0;
-    font-size: 0.76rem;
+    font-size: .76rem;
     margin: 0;
   }
 
   &__icon{
+    height: 1.7rem;
     display: flex;
     justify-self: center;
     margin: auto;
@@ -187,28 +189,28 @@ button:focus, button:active{
     display: flex;
     justify-content: flex-end;
   }
-
-  &__lines div{
-    height: 10px;
-    border-radius: 10px;
-  }
-
 }
 
 .header-lines{
   &__first-line{
-    width: 0.48rem;
+    height: 10px;
+    border-radius: 10px;
+    width: .48rem;
     margin-right: 1.12rem;
   }
 
   &__second-line{
-    width: 0.96rem;
+    height: 10px;
+    border-radius: 10px;
+    width: .96rem;
     margin: 0;
   }
 
   &__third-line{
+    height: 10px;
+    border-radius: 10px;
     width: 13.52rem;
-    margin-left: 0.56rem;
+    margin-left: .56rem;
   }
 }
 
@@ -217,10 +219,6 @@ button:focus, button:active{
 
   &__type-code-button{
     font-size: 1.12rem;
-  }
-
-  &__join-event-button, &__type-code-button{
-    width: 7.28rem;
   }
 }
 
@@ -235,6 +233,7 @@ button:focus, button:active{
 }
 
 .header-button{
+  white-space: nowrap;
   height: 3.04rem;
   color: white;
   //font-family: "Lato - Semibold";
@@ -269,8 +268,8 @@ button:focus, button:active{
   &__smaller-line{
     height: 7px;
     border-radius: 10px;
-    width: 0.64rem;
-    margin: auto 0.4rem;
+    width: .64rem;
+    margin: auto .4rem;
   }
 }
 
@@ -382,13 +381,13 @@ button:focus, button:active{
     color: #ffffff;
     //font-family: Lato;
     font-size: .85rem;
-    letter-spacing: 0.25px;
+    letter-spacing: .25px;
     font-weight: 300;
     line-height: 33.33px;
   }
 
   &__images{
-    height: 580px;
+    height: 25rem;
     margin: 100px 100px;
   }
 }
@@ -402,7 +401,7 @@ button:focus, button:active{
   height: -webkit-max-content;
   display: flex;
   position: relative;
-  padding: 0.5em;
+  padding: .5em;
   width: 16rem;
   height: 2rem;
   top: 6.5rem;
@@ -417,7 +416,7 @@ button:focus, button:active{
     //font-family: Lato;
     font-size: 1.8rem;
     font-weight: 300;
-    letter-spacing: 0.2rem;
+    letter-spacing: .2rem;
     vertical-align: super;
   }
 
@@ -528,8 +527,9 @@ button:focus, button:active{
   position: relative;
   top: -9rem;
   width: 9rem;
+  height: 3rem;
   left: 3.1rem;
-  font-size: 1.28rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -696,7 +696,7 @@ button:focus, button:active{
     //font-family: Lato;
     font-weight: 300;
     line-height: 33.33px;
-    letter-spacing: 0.27px;
+    letter-spacing: .27px;
   }
 
   &__icon{
@@ -709,7 +709,7 @@ button:focus, button:active{
     width: -moz-max-content;
     width: -webkit-max-content;
     border-style: none;
-    padding: 0.2em 1em;
+    padding: .2em 1em;
     margin: 20px auto;
     border-radius: 100px;
     color: #ffffff;
@@ -795,7 +795,7 @@ button:focus, button:active{
 
   &__subtitle{
     font-size: 2.1rem;
-    //letter-spacing: 0.1rem;
+    //letter-spacing: .1rem;
   }
 
   &__line{
@@ -904,7 +904,7 @@ button:focus, button:active{
 
   &__list-item{
     color: #ffffff;
-    font-size: 0.88rem;
+    font-size: .88rem;
   }
 
   &__list{
@@ -917,7 +917,7 @@ button:focus, button:active{
   }
 
   &__subtitle{
-    font-size: 0.88rem;
+    font-size: .88rem;
     color: #ffffff;
   }
 
