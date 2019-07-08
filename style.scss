@@ -18,14 +18,21 @@ button:focus, button:active{
 }
 
 .nav{
-  max-height: 166.4px;
   width: 100%;
 
   &__icon{
-  height: 100%;
+    height: 100%;
   }
 
   &__wrapper{
+    max-height: 166.4px;
+  }
+
+  &__bg{
+    height: 166.4px;
+  }
+
+  &__content-wrapper{
     height: 166.4px;
     position: relative;
     top: -166.4px;
@@ -38,11 +45,26 @@ button:focus, button:active{
     min-width: 15%;
     margin: 18px 0 12px;
   }
+
+  &__list{
+    height: 100%;
+    align-content: center;
+    min-width: 60%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__log-reg{
+    min-width: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .nav-bg{
-  height: 166.4px;
-
   &__black{
     background-color: #121111;
     height: 80%;
@@ -55,13 +77,6 @@ button:focus, button:active{
 }
 
 .nav-list{
-  height: 100%;
-  align-content: center;
-  min-width: 60%;
-  display: flex;
-  margin: 0;
-  padding: 0;
-
   &__element{
     display: inline-block;
     color: #f0f0f0;
@@ -74,14 +89,14 @@ button:focus, button:active{
     box-sizing: border-box;
   }
 
-  &__element > &__href{
+  &__href{
     height: 100%;
     display: flex;
     margin: auto .5rem;
     align-content: center;
   }
 
-  &__element > &__href > &__text{
+  &__text{
     width: content-box;
     margin: auto;
   }
@@ -95,12 +110,6 @@ button:focus, button:active{
 }
 
 .log-reg{
-  min-width: 15%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-
   &__icon-text-container{
     display: inline-block;
     margin: auto;
@@ -121,17 +130,21 @@ button:focus, button:active{
 }
 
 .header{
-  height: 58rem;
   width: 100%;
   background-image: url("img/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
 
   &__wrapper{
+    height: 58rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content-wrapper{
     height: 100%;
-    width: 85%;
+    width: 100%;
     position: relative;
     top: 25%;
     display: flex;
@@ -170,7 +183,7 @@ button:focus, button:active{
   }
 
   &__title{
-    white-space: nowrap;
+    //white-space: nowrap;
     color: white;
     font-size: 3.32rem;
     margin-bottom: 0;
@@ -188,6 +201,10 @@ button:focus, button:active{
   &__lines{
     display: flex;
     justify-content: flex-end;
+  }
+
+  &__buttons{
+    margin-top: 13rem;
   }
 }
 
@@ -223,7 +240,6 @@ button:focus, button:active{
 }
 
 .header-buttons{
-  margin-top: 13rem;
   display: flex;
   justify-content: center;
 
@@ -234,28 +250,17 @@ button:focus, button:active{
 
 .header-button{
   white-space: nowrap;
-  height: 3.04rem;
+  //height: 3.04rem;
   color: white;
   //font-family: "Lato - Semibold";
   font-size: 1.32rem;
   font-weight: 400;
-  padding: auto 1.2rem;
+  padding-top: 0.52rem;
+  padding-bottom: 0.52rem;
 
   &:focus{
     border: 2px solid #ffffff;
   }
-}
-
-.transparent-button{
-  border: 2px solid white;
-  background-color: transparent;
-  color: #f0f0f0;
-}
-
-.white-button{
-  border: 2px solid white;
-  background-color: white;
-  color: #037693;
 }
 
 .lines{
@@ -271,6 +276,18 @@ button:focus, button:active{
     width: .64rem;
     margin: auto .4rem;
   }
+}
+
+.transparent-button{
+  border: 2px solid white;
+  background-color: transparent;
+  color: #f0f0f0;
+}
+
+.white-button{
+  border: 2px solid white;
+  background-color: white;
+  color: #037693;
 }
 
 .wrapper{
@@ -293,6 +310,11 @@ button:focus, button:active{
   margin: 0;
 }
 
+.item-icon{
+  height: 92px;
+  width: 92px;
+}
+
 .how-it-works{
   &__item{
     margin: auto;
@@ -311,11 +333,6 @@ button:focus, button:active{
     justify-content: space-between;
     margin: 123px 10% 0;
   }
-}
-
-.item-icon{
-  height: 92px;
-  width: 92px;
 }
 
 .how-it-works-item{
@@ -346,7 +363,6 @@ button:focus, button:active{
 .interaction{
   background-color: #037693;
   background-size: cover;
-  max-height: 120rem;
 
   &__wrapper{
     width: 85%;
@@ -389,6 +405,7 @@ button:focus, button:active{
   &__images{
     height: 25rem;
     margin: 100px 100px;
+    width: 40%;
   }
 }
 
@@ -410,6 +427,7 @@ button:focus, button:active{
   border-right: none;
 
   &__text{
+    white-space: nowrap;
     display: inline;
     margin: 0;
     color: #ffffff;
@@ -503,10 +521,6 @@ button:focus, button:active{
   color: #f0a765;
 }
 
-.interaction__images{
-  width: 40%;
-}
-
 .second-rectangle-container{
   position: relative;
   top: -13.75rem;
@@ -533,17 +547,14 @@ button:focus, button:active{
   text-align: center;
 }
 
-
 .features{
   &__items-table{
-    margin: 80px auto 0;
+    width: 80%;
+    margin: 40px auto 0;
   }
 }
 
 .features-table{
-  width: 80%;
-  margin: 20px auto 0;
-
   &__item{
     padding: 2rem;
   }
@@ -591,11 +602,12 @@ button:focus, button:active{
 }
 
 .partners{
-  height: 456px;
   background-image: url("img/partners_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__wrapper{
-    height: 100%;
+    height: 441px;
     padding-top: 15px;
   }
 
@@ -645,14 +657,14 @@ button:focus, button:active{
   }
 }
 
-
-
 .event{
-  margin: auto 3px;
-  background-color: #ffffff;
-  //height: 516.8px;
-  min-width: 25vw;
-  //max-width: 25vw;
+  &__wrapper{
+    //height: 516.8px;
+    //max-width: 25vw;
+    background-color: #ffffff;
+    margin: auto 3px;
+    min-width: 25vw;
+  }
 
   &__title-container{
     background-repeat: no-repeat;
@@ -716,7 +728,7 @@ button:focus, button:active{
     font-size: 1.5rem;
   }
 
-  &:hover{
+  &__wrapper:hover{
     box-shadow: 0 0 30px grey;
     transform: scale(1.2);
     z-index: 1;
@@ -734,7 +746,6 @@ button:focus, button:active{
 .internal-event .event__title-container{
   background-image: url("img/internal-event.png");
 }
-
 
 .about-us{
   &__wrapper{
@@ -757,9 +768,14 @@ button:focus, button:active{
     padding-top: 2rem;
     margin-left: 20px;
   }
+
   &__content-container{
     display: flex;
     //justify-content: space-evenly;
+  }
+
+  &__circle-container{
+    margin: 0 20px;
   }
 }
 
@@ -784,18 +800,20 @@ button:focus, button:active{
 }
 
 .about-us-text{
-  &__title, &__subtitle{
-    margin: 0;
-    color: #037693;
-  }
-
   &__title{
+    @extend .interaction__title;
     font-size: 3.32rem;
   }
 
   &__subtitle{
+    @extend .interaction__subtitle;
     font-size: 2.1rem;
     //letter-spacing: .1rem;
+  }
+
+  &__title, &__subtitle{
+    margin: 0;
+    color: #037693;
   }
 
   &__line{
@@ -803,6 +821,7 @@ button:focus, button:active{
   }
 
   &__text{
+    @extend .interaction__text;
     line-height: 28px;
     font-size: 1rem;
     margin-top: 20px;
@@ -811,7 +830,6 @@ button:focus, button:active{
 }
 
 .stats{
-  margin: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

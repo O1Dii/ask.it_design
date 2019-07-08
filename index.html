@@ -8,63 +8,67 @@
 </head>
 <body>
     <header class="nav">
-        <div class="nav__bg nav-bg">
-            <div class="nav-bg__black"></div>
-            <div class="nav-bg__blue"></div>
-        </div>
         <div class="nav__wrapper">
-            <div class="nav__icon-container">
-                <img class="nav__icon" src="img/ask_it_icon.png" alt="icon">
+            <div class="nav__bg nav-bg">
+                <div class="nav-bg__black"></div>
+                <div class="nav-bg__blue"></div>
             </div>
-            <nav class="nav__list-container">
-                <ul class="nav__list nav-list">
-                    <li class="nav-list__element"><a class="nav-list__href" href="#header"><p class="nav-list__text">Home</p></a></li>
-                    <li class="nav-list__element"><a class="nav-list__href" href="#how-it-works"><p class="nav-list__text">How it works</p></a></li>
-                    <li class="nav-list__element"><a class="nav-list__href" href="#features"><p class="nav-list__text">Features</p></a></li>
-                    <li class="nav-list__element"><a class="nav-list__href" href="#partners"><p class="nav-list__text">Partners</p></a></li>
-                    <li class="nav-list__element"><a class="nav-list__href" href="#events"><p class="nav-list__text">Events</p></a></li>
-                    <li class="nav-list__element"><a class="nav-list__href" href="#about-us"><p class="nav-list__text">About us</p></a></li>
+            <div class="nav__content-wrapper">
+                <div class="nav__icon-container">
+                    <img class="nav__icon" src="img/ask_it_icon.png" alt="icon">
+                </div>
+                <nav class="nav__list-container">
+                    <ul class="nav__list nav-list">
+                        <li class="nav-list__element"><a class="nav-list__href" href="#header"><p class="nav-list__text">Home</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#how-it-works"><p class="nav-list__text">How it works</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#features"><p class="nav-list__text">Features</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#partners"><p class="nav-list__text">Partners</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#events"><p class="nav-list__text">Events</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#about-us"><p class="nav-list__text">About us</p></a></li>
+                    </ul>
+                </nav>
+                <ul class="nav__log-reg log-reg">
+                    <li class="log-reg__icon-text-container">
+                        <img class="log-reg__icon" src="img/sign-in.png" alt="icon">
+                        <p class="log-reg__text">Log in</p>
+                    </li>
+                    <li class="log-reg__icon-text-container">
+                        <img class="log-reg__icon" src="img/avatar.png" alt="icon">
+                        <p class="log-reg__text">Register</p>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="nav__log-reg log-reg">
-                <li class="log-reg__icon-text-container">
-                    <img class="log-reg__icon" src="img/sign-in.png" alt="icon">
-                    <p class="log-reg__text">Log in</p>
-                </li>
-                <li class="log-reg__icon-text-container">
-                    <img class="log-reg__icon" src="img/avatar.png" alt="icon">
-                    <p class="log-reg__text">Register</p>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
         <div id="header" class="header">
             <div class="header__wrapper">
-                <div class="header__text">
-                    <div class="header__titles-container">
-                        <div class="header__titles-lines-container">
-                            <h1 class="header__title">Live Interaction From Audience</h1>
-                            <div class="header__lines-container">
-                                <div class="header__lines header-lines">
-                                    <div class="header-lines__first-line white-line"></div>
-                                    <div class="header-lines__second-line white-line"></div>
-                                    <div class="header-lines__third-line white-line"></div>
+                <div class="header__content-wrapper">
+                    <div class="header__text">
+                        <div class="header__titles-container">
+                            <div class="header__titles-lines-container">
+                                <h1 class="header__title">Live Interaction From Audience</h1>
+                                <div class="header__lines-container">
+                                    <div class="header__lines header-lines">
+                                        <div class="header-lines__first-line white-line"></div>
+                                        <div class="header-lines__second-line white-line"></div>
+                                        <div class="header-lines__third-line white-line"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <h3 class="header__subtitle">Q&A, Polls and Slide-sharing for Events</h3>
                         </div>
-                        <h3 class="header__subtitle">Q&A, Polls and Slide-sharing for Events</h3>
-                    </div>
-                    <div class="header__buttons header-buttons">
-                        <button class="header-buttons__create-event-button transparent-button header-button">Create a event</button>
-                        <div class="header__other-buttons header-other-buttons">
-                            <button class="header-other-buttons__join-event-button transparent-button header-button">Join event</button>
-                            <button class="header-other-buttons__type-code-button white-button header-button">type code</button>
+                        <div class="header__buttons header-buttons">
+                            <button class="header-buttons__create-event-button transparent-button header-button">Create a event</button>
+                            <div class="header__other-buttons header-other-buttons">
+                                <button class="header-other-buttons__join-event-button transparent-button header-button">Join event</button>
+                                <button class="header-other-buttons__type-code-button white-button header-button">type code</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="header__image-container">
-                    <img class="header__image" src="img/phone.png">
+                    <div class="header__image-container">
+                        <img class="header__image" src="img/phone.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -270,51 +274,57 @@
                 </div>
                 <div class="events__container">
                     <div class="event external-event">
-                        <div class="event__title-container">
-                            <p class="event__title-first">EXTERNAL</p>
-                            <h1 class="event__title-second">EVENT</h1>
-                        </div>
-                        <div class="full-line green-line"></div>
-                        <div class="event__content-container">
-                            <img class="event__icon" src="img/usb-connection.png" alt="">
-                            <p class="event__text">Offers customizable
-                                on-line registration service
-                                for event organizers. Includes
-                                pricing, features, and types of accounts.
-                            </p>
-                            <button class="event__button green-line">Discover</button>
+                        <div class="event__wrapper">
+                            <div class="event__title-container">
+                                <p class="event__title-first">EXTERNAL</p>
+                                <h1 class="event__title-second">EVENT</h1>
+                            </div>
+                            <div class="full-line green-line"></div>
+                            <div class="event__content-container">
+                                <img class="event__icon" src="img/usb-connection.png" alt="">
+                                <p class="event__text">Offers customizable
+                                    on-line registration service
+                                    for event organizers. Includes
+                                    pricing, features, and types of accounts.
+                                </p>
+                                <button class="event__button green-line">Discover</button>
+                            </div>
                         </div>
                     </div>
                     <div class="event interactive-event">
-                        <div class="event__title-container">
-                            <p class="event__title-first">INTERACTIVE</p>
-                            <h1 class="event__title-second">EVENT</h1>
-                        </div>
-                        <div class="full-line red-line"></div>
-                        <div class="event__content-container">
-                            <img class="event__icon" src="img/interactivity.png" alt="">
-                            <p class="event__text">Offers customizable
-                                on-line registration service
-                                for event organizers. Includes
-                                pricing, features, and types of accounts.
-                            </p>
-                            <button class="event__button red-line">Discover</button>
+                        <div class="event__wrapper">
+                            <div class="event__title-container">
+                                <p class="event__title-first">INTERACTIVE</p>
+                                <h1 class="event__title-second">EVENT</h1>
+                            </div>
+                            <div class="full-line red-line"></div>
+                            <div class="event__content-container">
+                                <img class="event__icon" src="img/interactivity.png" alt="">
+                                <p class="event__text">Offers customizable
+                                    on-line registration service
+                                    for event organizers. Includes
+                                    pricing, features, and types of accounts.
+                                </p>
+                                <button class="event__button red-line">Discover</button>
+                            </div>
                         </div>
                     </div>
                     <div class="event internal-event">
-                        <div class="event__title-container">
-                            <p class="event__title-first">INTERNAL</p>
-                            <h1 class="event__title-second">EVENT</h1>
-                        </div>
-                        <div class="full-line orange-line"></div>
-                        <div class="event__content-container">
-                            <img class="event__icon" src="img/hard-disk.png" alt="">
-                            <p class="event__text">Offers customizable
-                                on-line registration service
-                                for event organizers. Includes
-                                pricing, features, and types of accounts.
-                            </p>
-                            <button class="event__button orange-line">Discover</button>
+                        <div class="event__wrapper">
+                            <div class="event__title-container">
+                                <p class="event__title-first">INTERNAL</p>
+                                <h1 class="event__title-second">EVENT</h1>
+                            </div>
+                            <div class="full-line orange-line"></div>
+                            <div class="event__content-container">
+                                <img class="event__icon" src="img/hard-disk.png" alt="">
+                                <p class="event__text">Offers customizable
+                                    on-line registration service
+                                    for event organizers. Includes
+                                    pricing, features, and types of accounts.
+                                </p>
+                                <button class="event__button orange-line">Discover</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -336,21 +346,21 @@
                 </div>
                 <div class="about-us__content-container">
                     <div class="about-us__text-container about-us-text">
-                        <h1 class="about-us-text__title interaction__title">Who we are?</h1>
-                        <h3 class="about-us-text__subtitle interaction__subtitle">What we can do for you</h3>
+                        <h1 class="about-us-text__title">Who we are?</h1>
+                        <h3 class="about-us-text__subtitle">What we can do for you</h3>
                         <div class="about-us-text__line line blue-line"></div>
-                        <p class="about-us-text__text interaction__text">it’s never been easier to connect with people who speak this language. They
+                        <p class="about-us-text__text">it’s never been easier to connect with people who speak this language. They
                             want others to build up their self-image and confidence, and digital connectivity
                             creates ample opportunity to tell your
                         </p>
-                        <p class="about-us-text__text interaction__text">
+                        <p class="about-us-text__text">
                             One option might be developing a blog series that focuses on industry wins, or
                             spotlights companies that are doing something right. Or if you share an article
                             with your network.
                         </p>
                     </div>
                     <div class="about-us__circles">
-                        <div class="circle-container stats">
+                        <div class="about-us__circle-container stats">
                             <div class="stats__outer-circle green-transparent-line">
                                 <div class="stats__inner-circle green-line"></div>
                             </div>
@@ -358,7 +368,7 @@
                             <p class="stats__name">audience served</p>
                             <div class="full-line green-line"></div>
                         </div>
-                        <div class="circle-container stats">
+                        <div class="about-us__circle-container stats">
                             <div class="stats__outer-circle red-transparent-line">
                                 <div class="stats__inner-circle red-line"></div>
                             </div>
@@ -366,7 +376,7 @@
                             <p class="stats__name">hours of service</p>
                             <div class="full-line red-line"></div>
                         </div>
-                        <div class="circle-container stats">
+                        <div class="about-us__circle-container stats">
                             <div class="stats__outer-circle orange-transparent-line">
                                 <div class="stats__inner-circle orange-line"></div>
                             </div>
