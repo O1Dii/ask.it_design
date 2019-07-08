@@ -1,0 +1,24 @@
+@import "mixins.scss";
+
+.audience-interaction-lines{
+  &__first-line{
+    height: 10px;
+    border-radius: 10px;
+    width: .48rem;
+    margin-right: 1.12rem;
+  }
+
+  &__second-line{
+    height: 10px;
+    border-radius: 10px;
+    width: .96rem;
+    margin: 0;
+  }
+
+  &__third-line{
+    height: 10px;
+    border-radius: 10px;
+    width: 13.52rem;
+    margin-left: .56rem;
+  }
+}

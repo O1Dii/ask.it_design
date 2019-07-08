@@ -1,0 +1,45 @@
+@import "mixins.scss";
+
+.nav-list{
+  &__element{
+    @include mediaScreenMaxWidth(720px){
+      height: 40px;
+    }
+
+    display: inline-block;
+    color: #f0f0f0;
+    margin: auto 1vw;
+    font-size: 1.56rem;
+    text-align: center;
+    vertical-align: bottom;
+    border-top: 2px solid #000000;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  &__href{
+    height: 100%;
+    display: flex;
+    margin: auto .5rem;
+    align-content: center;
+  }
+
+  &__text{
+    width: content-box;
+    margin: auto;
+  }
+
+  &__element:hover, &__element:focus{
+    @include mediaScreenMaxWidth(720px){
+      height: 40px;
+      background-color: inherit;
+      border-top: 2px solid #000000;
+      box-sizing: border-box;
+    }
+
+    height: 100%;
+    background-color: #f0f0f070;
+    border-top: 2px solid #f0f0f0;
+    box-sizing: border-box;
+  }
+}

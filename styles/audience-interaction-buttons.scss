@@ -1,0 +1,10 @@
+@import "mixins.scss";
+
+.audience-interaction-buttons{
+  display: flex;
+  justify-content: center;
+
+  &__create-event-button{
+    margin-right: 7%;
+  }
+}

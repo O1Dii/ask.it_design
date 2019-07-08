@@ -1,0 +1,21 @@
+@import "mixins.scss";
+
+.about-us-logo{
+  width: 16rem;
+  top: 6.95rem;
+  left: -20%;
+  border-color: #037693;
+
+  &__dot{
+    background-color: #037693;
+  }
+
+  &__line{
+    background-color: #037693;
+    width: 40%;
+  }
+
+  &__text{
+    color: #037693;
+  }
+}

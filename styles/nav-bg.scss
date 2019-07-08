@@ -1,0 +1,13 @@
+@import "mixins.scss";
+
+.nav-bg{
+  &__black{
+    background-color: #121111;
+    height: 80%;
+  }
+
+  &__blue{
+    background-color: #0A272C;
+    height: 20%;
+  }
+}

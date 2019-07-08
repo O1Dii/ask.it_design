@@ -1,0 +1,33 @@
+@import "mixins.scss";
+
+.how-it-works-item{
+  &__button-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__button{
+    @include mediaScreenMaxWidth(720px){
+      height: 120px;
+      width: 120px;
+      border: 2px solid #037693;
+      margin-bottom: 42px;
+    }
+
+    height: 162px;
+    width: 162px;
+    border: 2px solid #037693;
+    margin-bottom: 74px;
+  }
+
+  &__text{
+    margin: 0 auto auto;
+    text-align: center;
+    font-size: 1.44rem;
+    min-height: 2.76rem;
+    max-width: 90%;
+    color: #037693;
+  }
+}

@@ -1,0 +1,10 @@
+@import "mixins.scss";
+
+.third-rectangle-container{
+  @include mediaScreenMaxWidth(720px){
+    position: static;
+  }
+
+  position: relative;
+  top: -27.25rem;
+}

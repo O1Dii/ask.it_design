@@ -1,0 +1,7 @@
+@import "mixins.scss";
+
+.rectangle-container{
+  @include mediaScreenMaxWidth(720px){
+    height: 7rem;
+  }
+}

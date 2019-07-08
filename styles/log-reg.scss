@@ -1,0 +1,21 @@
+@import "mixins.scss";
+
+.log-reg{
+  &__icon-text-container{
+    display: inline-block;
+    margin: auto;
+  }
+
+  &__text{
+    color: #f0f0f0;
+    font-size: .76rem;
+    margin: 0;
+  }
+
+  &__icon{
+    height: 1.7rem;
+    display: flex;
+    justify-self: center;
+    margin: auto;
+  }
+}

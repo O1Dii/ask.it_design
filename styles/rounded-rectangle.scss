@@ -1,0 +1,11 @@
+@import "mixins.scss";
+
+.rounded-rectangle{
+  @include mediaScreenMaxWidth(720px){
+    height: 7rem;
+    width: 7rem;
+  }
+
+  height: 15rem;
+  width: 15rem;
+}
