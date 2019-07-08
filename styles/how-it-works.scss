@@ -1,0 +1,74 @@
+@import "mixins.scss";
+
+.item-icon{
+  @include mediaScreenMaxWidth(720px){
+    width: 60px;
+    height: 60px;
+  }
+
+  height: 92px;
+  width: 92px;
+}
+
+.how-it-works{
+  &__item{
+    @include mediaScreenMaxWidth(720px){
+      width: 300px;
+      margin-bottom: 50px;
+    }
+
+    margin: auto;
+  }
+
+  &__item .how-it-works-item__button:focus{
+    background-color: #037693;
+  }
+
+  &__item .how-it-works-item__button:focus .item-icon{
+    filter: invert(100%) sepia(0%) saturate(100%) brightness(10000%) contrast(100%);
+  }
+
+  &__items-container{
+    @include mediaScreenMaxWidth(720px){
+      flex-direction: initial;
+      flex-wrap: wrap;
+      margin: 50px 0;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    margin: 123px 10% 0;
+  }
+}
+
+.how-it-works-item{
+  &__button-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__button{
+    @include mediaScreenMaxWidth(720px){
+      height: 120px;
+      width: 120px;
+      border: 2px solid #037693;
+      margin-bottom: 42px;
+    }
+
+    height: 162px;
+    width: 162px;
+    border: 2px solid #037693;
+    margin-bottom: 74px;
+  }
+
+  &__text{
+    margin: 0 auto auto;
+    text-align: center;
+    font-size: 1.44rem;
+    min-height: 2.76rem;
+    max-width: 90%;
+    color: #037693;
+  }
+}

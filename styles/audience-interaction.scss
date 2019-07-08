@@ -1,0 +1,168 @@
+@import "mixins.scss";
+
+.audience-interaction{
+  width: 100%;
+  background-image: url("img/header_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper{
+    @include mediaScreenMaxWidth(720px) {
+      height: 25rem;
+    }
+
+    height: 58rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content-wrapper{
+    @include mediaScreenMaxWidth(720px){
+      top: 25%;
+      margin: auto 5%
+    }
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__image-container{
+    @include mediaScreenMaxWidth(720px){
+      display: none;
+    }
+    margin-top: 2.3rem;
+    width: 32%;
+  }
+
+  &__image{
+    width: 100%;
+    max-width: 26.94rem;
+    max-height: 54.9rem;
+  }
+
+  &__text{
+    @include mediaScreenMaxWidth(720px){
+      width: 100%;
+    }
+
+    width: 62%;
+  }
+
+  &__titles-container{
+    width: 100%;
+  }
+
+  &__titles-lines-container{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(720px){
+      font-size: 2.3rem;
+    }
+
+    //white-space: nowrap;
+    color: white;
+    font-size: 3.32rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__subtitle{
+    @include mediaScreenMaxWidth(720px){
+      margin-top: 20px;
+      font-size: 1.4rem;
+    }
+
+    color: white;
+    //font-family: Lato;
+    font-size: 1.84rem;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  &__lines{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__buttons{
+    @include mediaScreenMaxWidth(720px){
+      margin-top: 50px;
+    }
+
+    margin-top: 13rem;
+  }
+}
+
+.audience-interaction-lines{
+  &__first-line{
+    height: 10px;
+    border-radius: 10px;
+    width: .48rem;
+    margin-right: 1.12rem;
+  }
+
+  &__second-line{
+    height: 10px;
+    border-radius: 10px;
+    width: .96rem;
+    margin: 0;
+  }
+
+  &__third-line{
+    height: 10px;
+    border-radius: 10px;
+    width: 13.52rem;
+    margin-left: .56rem;
+  }
+}
+
+.audience-interaction-other-buttons{
+  display: flex;
+
+  &__type-code-button{
+    font-size: 1.12rem;
+  }
+}
+
+.audience-interaction-buttons{
+  display: flex;
+  justify-content: center;
+
+  &__create-event-button{
+    margin-right: 7%;
+  }
+}
+
+.audience-interaction-button{
+  @include mediaScreenMaxWidth(720px){
+    padding: 1rem;
+  }
+
+  white-space: nowrap;
+  //height: 3.04rem;
+  color: white;
+  //font-family: "Lato - Semibold";
+  font-size: 1.32rem;
+  font-weight: 400;
+  padding-top: 0.52rem;
+  padding-bottom: 0.52rem;
+
+  &:focus{
+    border: 2px solid #ffffff;
+  }
+}

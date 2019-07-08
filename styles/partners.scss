@@ -1,0 +1,35 @@
+.partners{
+  background-image: url("img/partners_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper{
+    height: 441px;
+    padding-top: 15px;
+  }
+
+  &__title{
+    height: 30%;
+    color: #ffffff;
+  }
+
+  &__images{
+    height: 70%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+  }
+
+  &__images-container{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon{
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,94 @@
+.footer{
+  background-color: #0d0d0d;
+
+  &__wrapper{
+    width: 80%;
+    margin: auto;
+  }
+
+  &__content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 5rem;
+    padding-top: 5rem;
+  }
+
+  &__first-col{
+    width: 19%;
+  }
+
+  &__first-col, &__second-col, &__third-col, &__fourth-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__second-col, &__third-col, &__fourth-col {
+    margin-top: 4.9rem;
+    justify-content: flex-start;
+  }
+
+  &__fourth-col{
+    align-items: center;
+  }
+
+  &__icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon{
+    height: 30%;
+    margin: auto;
+  }
+
+  &__text-under-icon{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &__list-item{
+    color: #ffffff;
+    font-size: .88rem;
+  }
+
+  &__list{
+    list-style: none;
+    padding: 0;
+  }
+
+  &__title{
+    color: #ffffff;
+  }
+
+  &__subtitle{
+    font-size: .88rem;
+    color: #ffffff;
+  }
+
+  &__email-address{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    background-image: url("img/Envelope.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 20px;
+    text-align: center;
+  }
+
+  &__rights-reserved{
+    color: #ffffff;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &__rights-reserved-container{
+    padding: 1rem;
+  }
+}

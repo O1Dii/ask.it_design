@@ -1,0 +1,205 @@
+@import "mixins.scss";
+
+.nav{
+  width: 100%;
+
+  &__icon{
+    height: 100%;
+  }
+
+  &__wrapper{
+    height: 166.4px;
+  }
+
+  &__bg{
+    position: absolute;
+    height: 166.4px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__icon-menu-wrapper{
+    height: 100%;
+    display: flex;
+  }
+
+  &__content-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 10%;
+  }
+
+  &__icon-container{
+    min-width: 15%;
+    margin: 18px 0 12px;
+  }
+
+  &__list{
+    height: 100%;
+    align-content: center;
+    min-width: 60%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__log-reg{
+    min-width: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-container{
+    //height: 166.4px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__toggle-label{
+    margin: auto;
+    display: none;
+  }
+
+  &__toggle{
+    display: none;
+  }
+
+  @include mediaScreenMaxWidth(720px){
+    &__wrapper{
+      height: fit-content;
+    }
+
+    &__content-wrapper{
+      min-height: 166.4px;
+      width: 100%;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    &__icon-menu-wrapper{
+      height: 166.4px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    &__list-container{
+      background-color: #121111;
+      display: none;
+    }
+
+    &__toggle-label{
+      display: block;
+      margin: auto 0;
+    }
+
+    &__menu-button{
+      width: 60px;
+      height: 60px;
+    }
+
+    &__icon-container{
+      margin: auto;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__empty-div{
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+
+    &__list{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.nav-bg{
+  &__black{
+    background-color: #121111;
+    height: 80%;
+  }
+
+  &__blue{
+    background-color: #0A272C;
+    height: 20%;
+  }
+}
+
+.nav-list{
+  &__element{
+    @include mediaScreenMaxWidth(720px){
+      height: 40px;
+    }
+
+    display: inline-block;
+    color: #f0f0f0;
+    margin: auto 1vw;
+    font-size: 1.56rem;
+    text-align: center;
+    vertical-align: bottom;
+    border-top: 2px solid #000000;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  &__href{
+    height: 100%;
+    display: flex;
+    margin: auto .5rem;
+    align-content: center;
+  }
+
+  &__text{
+    width: content-box;
+    margin: auto;
+  }
+
+  &__element:hover, &__element:focus{
+    @include mediaScreenMaxWidth(720px){
+      height: 40px;
+      background-color: inherit;
+      border-top: 2px solid #000000;
+      box-sizing: border-box;
+    }
+
+    height: 100%;
+    background-color: #f0f0f070;
+    border-top: 2px solid #f0f0f0;
+    box-sizing: border-box;
+  }
+}
+
+.log-reg{
+  &__icon-text-container{
+    display: inline-block;
+    margin: auto;
+  }
+
+  &__text{
+    color: #f0f0f0;
+    font-size: .76rem;
+    margin: 0;
+  }
+
+  &__icon{
+    height: 1.7rem;
+    display: flex;
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+@include mediaScreenMaxWidth(720px){
+  #nav-toggle:checked + .nav__list-container{
+    display: flex;
+    flex-direction: column;
+  }
+}

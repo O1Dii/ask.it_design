@@ -1,0 +1,136 @@
+.interaction {
+  background-color: #037693;
+  background-size: cover; }
+  .interaction__wrapper {
+    width: 85%;
+    margin: 0 auto 0 0;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 720px) {
+      .interaction__wrapper {
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse; } }
+  .interaction__text-container {
+    width: 60%; }
+    @media only screen and (max-width: 720px) {
+      .interaction__text-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; } }
+  .interaction__title {
+    color: #ffffff;
+    width: 60%;
+    min-width: 18.8rem;
+    font-size: 2.988rem;
+    font-weight: 700;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 720px) {
+      .interaction__title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem; } }
+  .interaction__subtitle {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500; }
+    @media only screen and (max-width: 720px) {
+      .interaction__subtitle {
+        margin: 15px auto 10px;
+        font-size: 1rem; } }
+  .interaction__text {
+    color: #ffffff;
+    font-size: .85rem;
+    letter-spacing: .25px;
+    font-weight: 300;
+    line-height: 33.33px; }
+    @media only screen and (max-width: 720px) {
+      .interaction__text {
+        display: inline;
+        margin: 0; } }
+  .interaction__images {
+    height: 25rem;
+    margin: 100px 100px;
+    width: 40%; }
+    @media only screen and (max-width: 720px) {
+      .interaction__images {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly; } }
+
+.interaction-logo {
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  height: intrinsic;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+  display: flex;
+  position: relative;
+  padding: .5em;
+  width: 16rem;
+  height: 2rem;
+  top: 6.5rem;
+  left: 1rem;
+  border: 1px solid #ffffff;
+  border-right: none; }
+  @media only screen and (max-width: 720px) {
+    .interaction-logo {
+      display: none; } }
+  .interaction-logo__text {
+    white-space: nowrap;
+    display: inline;
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    vertical-align: super; }
+  .interaction-logo__line, .interaction-logo__dot {
+    margin: auto 0; }
+
+.second-rectangle-container {
+  position: relative;
+  top: -13.75rem;
+  left: 8.75rem; }
+  @media only screen and (max-width: 720px) {
+    .second-rectangle-container {
+      position: static; } }
+
+.third-rectangle-container {
+  position: relative;
+  top: -27.25rem; }
+  @media only screen and (max-width: 720px) {
+    .third-rectangle-container {
+      position: static; } }
+
+.rounded-rectangle {
+  height: 15rem;
+  width: 15rem; }
+  @media only screen and (max-width: 720px) {
+    .rounded-rectangle {
+      height: 7rem;
+      width: 7rem; } }
+
+.rounded-rectangle-text {
+  position: relative;
+  top: -9rem;
+  width: 9rem;
+  height: 3rem;
+  left: 3.1rem;
+  font-size: 1.2rem;
+  text-align: center; }
+  @media only screen and (max-width: 720px) {
+    .rounded-rectangle-text {
+      top: -4.6rem;
+      left: 1.15rem;
+      width: 75px;
+      font-size: 0.65rem; } }
+
+@media only screen and (max-width: 720px) {
+  .rectangle-container {
+    height: 7rem; } }

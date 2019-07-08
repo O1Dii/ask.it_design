@@ -1,0 +1,141 @@
+.nav {
+  width: 100%; }
+  .nav__icon {
+    height: 100%; }
+  .nav__wrapper {
+    height: 166.4px; }
+  .nav__bg {
+    position: absolute;
+    height: 166.4px;
+    width: 100%;
+    z-index: -1; }
+  .nav__icon-menu-wrapper {
+    height: 100%;
+    display: flex; }
+  .nav__content-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 10%; }
+  .nav__icon-container {
+    min-width: 15%;
+    margin: 18px 0 12px; }
+  .nav__list {
+    height: 100%;
+    align-content: center;
+    min-width: 60%;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .nav__log-reg {
+    min-width: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; }
+  .nav__list-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+  .nav__toggle-label {
+    margin: auto;
+    display: none; }
+  .nav__toggle {
+    display: none; }
+  @media only screen and (max-width: 720px) {
+    .nav__wrapper {
+      height: fit-content; }
+    .nav__content-wrapper {
+      min-height: 166.4px;
+      width: 100%;
+      margin: auto;
+      flex-direction: column; }
+    .nav__icon-menu-wrapper {
+      height: 166.4px;
+      margin-right: 20px;
+      margin-left: 20px; }
+    .nav__list-container {
+      background-color: #121111;
+      display: none; }
+    .nav__toggle-label {
+      display: block;
+      margin: auto 0; }
+    .nav__menu-button {
+      width: 60px;
+      height: 60px; }
+    .nav__icon-container {
+      margin: auto;
+      height: 100px;
+      display: flex;
+      justify-content: center; }
+    .nav__empty-div {
+      display: block;
+      width: 60px;
+      height: 60px; }
+    .nav__list {
+      display: flex;
+      flex-direction: column; } }
+
+.nav-bg__black {
+  background-color: #121111;
+  height: 80%; }
+
+.nav-bg__blue {
+  background-color: #0A272C;
+  height: 20%; }
+
+.nav-list__element {
+  display: inline-block;
+  color: #f0f0f0;
+  margin: auto 1vw;
+  font-size: 1.56rem;
+  text-align: center;
+  vertical-align: bottom;
+  border-top: 2px solid #000000;
+  height: 100%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 720px) {
+    .nav-list__element {
+      height: 40px; } }
+
+.nav-list__href {
+  height: 100%;
+  display: flex;
+  margin: auto .5rem;
+  align-content: center; }
+
+.nav-list__text {
+  width: content-box;
+  margin: auto; }
+
+.nav-list__element:hover, .nav-list__element:focus {
+  height: 100%;
+  background-color: #f0f0f070;
+  border-top: 2px solid #f0f0f0;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 720px) {
+    .nav-list__element:hover, .nav-list__element:focus {
+      height: 40px;
+      background-color: inherit;
+      border-top: 2px solid #000000;
+      box-sizing: border-box; } }
+
+.log-reg__icon-text-container {
+  display: inline-block;
+  margin: auto; }
+
+.log-reg__text {
+  color: #f0f0f0;
+  font-size: .76rem;
+  margin: 0; }
+
+.log-reg__icon {
+  height: 1.7rem;
+  display: flex;
+  justify-self: center;
+  margin: auto; }
+
+@media only screen and (max-width: 720px) {
+  #nav-toggle:checked + .nav__list-container {
+    display: flex;
+    flex-direction: column; } }
