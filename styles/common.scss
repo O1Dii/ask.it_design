@@ -47,6 +47,10 @@ button:focus, button:active{
 }
 
 .wrapper{
+  @include mediaScreenMaxWidth(720px) {
+    margin: 50px 0;
+  }
+
   margin: 124.8px auto 147.2px;
 }
 
@@ -76,6 +80,11 @@ button:focus, button:active{
 }
 
 .line{
+  @include mediaScreenMaxWidth(720px) {
+    width: 20%;
+    margin: auto;
+  }
+
   display: inline-block;
   background-color: #ffffff;
   height: 1px;
@@ -144,13 +153,38 @@ button:focus, button:active{
   color: #f0a765;
 }
 
-@include mediaScreenMaxWidth(720px) {
-  .wrapper {
-    margin: 50px 0;
+.mobile-hidden{
+  @include mediaScreenMaxWidth(700px){
+    display: none;
   }
+}
 
-  .line{
-    width: 20%;
-    margin: auto;
+.mobile-white-icon{
+  @include mediaScreenMaxWidth(700px){
+    filter: invert(100%) sepia(0%) saturate(100%) brightness(10000%) contrast(100%);
   }
+}
+
+.green-mobile-reverse{
+  @include mediaScreenMaxWidth(700px){
+    background-color: #ffffff;
+    color: #4ca59a;
+  }
+  color: #ffffff;
+}
+
+.red-mobile-reverse{
+  @include mediaScreenMaxWidth(700px){
+    background-color: #ffffff;
+    color: #f26250;
+  }
+  color: #ffffff;
+}
+
+.orange-mobile-reverse{
+  @include mediaScreenMaxWidth(700px){
+    background-color: #ffffff;
+    color: #f0a765;
+  }
+  color: #ffffff;
 }

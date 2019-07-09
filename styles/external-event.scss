@@ -1,5 +1,17 @@
 @import "mixins.scss";
 
 .external-event .event__title-container{
+  @include mediaScreenMaxWidth(700px){
+    background-image: none;
+  }
+
   background-image: url("img/external-event.png");
+}
+
+.external-event{
+  @include mediaScreenMaxWidth(700px){
+    background-image: url("img/external-event.png");
+    background-size: cover;
+    order: 3;
+  }
 }
