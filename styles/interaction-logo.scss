@@ -5,22 +5,6 @@
     display: none;
   }
 
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  height: intrinsic;
-  height: -moz-max-content;
-  height: -webkit-max-content;
-  display: flex;
-  position: relative;
-  padding: .5em;
-  width: 16rem;
-  height: 2rem;
-  top: 6.5rem;
-  left: 1rem;
-  border: 1px solid #ffffff;
-  border-right: none;
-
   &__text{
     white-space: nowrap;
     display: inline;
@@ -35,5 +19,23 @@
 
   &__line, &__dot{
     margin: auto 0;
+  }
+
+  &__dot{
+    background-color: #ffffff;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+    border-radius: 100%;
+  }
+
+  &__line{
+    display: inline-block;
+    background-color: #ffffff;
+    height: 1px;
+    width: 40%;
+    min-width: 4rem;
+    vertical-align: middle;
   }
 }

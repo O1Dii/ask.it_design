@@ -70,10 +70,13 @@
 
   @include mediaScreenMaxWidth(720px){
     &__wrapper{
+      height: auto;
       height: fit-content;
     }
 
     &__content-wrapper{
+      height: auto;
+      height: fit-content;
       min-height: 166.4px;
       width: 100%;
       margin: auto;

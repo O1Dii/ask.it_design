@@ -1,22 +1,36 @@
+@import "mixins.scss";
+
 .audience-interaction-lines{
   &__first-line{
+    @include mediaScreenMaxWidth(700px){
+      height: 5px;
+    }
+
     height: 10px;
     border-radius: 10px;
-    width: .48rem;
-    margin-right: 1.12rem;
+    width: .48em;
+    margin-right: 1.12em;
   }
 
   &__second-line{
+    @include mediaScreenMaxWidth(700px){
+      height: 5px;
+    }
+
     height: 10px;
     border-radius: 10px;
-    width: .96rem;
+    width: .96em;
     margin: 0;
   }
 
   &__third-line{
+    @include mediaScreenMaxWidth(700px){
+      height: 5px;
+    }
+
     height: 10px;
     border-radius: 10px;
-    width: 13.52rem;
-    margin-left: .56rem;
+    width: 13.52em;
+    margin-left: .56em;
   }
 }

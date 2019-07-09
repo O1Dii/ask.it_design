@@ -10,10 +10,10 @@
 
   &__button{
     @include mediaScreenMaxWidth(720px){
-      height: 120px;
-      width: 120px;
+      height: 100px;
+      width: 100px;
       border: 2px solid #037693;
-      margin-bottom: 42px;
+      margin-bottom: 32px;
     }
 
     height: 162px;
@@ -23,6 +23,12 @@
   }
 
   &__text{
+    @include mediaScreenMaxWidth(720px){
+      font-size: 1.1rem;
+      max-height: 2.76rem;
+      max-width: 100%;
+    }
+
     margin: 0 auto auto;
     text-align: center;
     font-size: 1.44rem;

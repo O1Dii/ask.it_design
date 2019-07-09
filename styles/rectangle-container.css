@@ -1,0 +1,22 @@
+.rectangle-container__rounded-rectangle {
+  height: 15rem;
+  width: 15rem; }
+  @media only screen and (max-width: 720px) {
+    .rectangle-container__rounded-rectangle {
+      height: 7rem;
+      width: 7rem; } }
+
+.rectangle-container__rounded-rectangle-text {
+  position: relative;
+  top: -9rem;
+  width: 9rem;
+  height: 3rem;
+  left: 3.1rem;
+  font-size: 1.2rem;
+  text-align: center; }
+  @media only screen and (max-width: 720px) {
+    .rectangle-container__rounded-rectangle-text {
+      top: -4.6rem;
+      left: 1.15rem;
+      width: 75px;
+      font-size: 0.65rem; } }

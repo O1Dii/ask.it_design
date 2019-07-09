@@ -10,7 +10,23 @@
     padding-top: 15px;
   }
 
+  &__title-container{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: auto;
+  }
+
   &__title{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 2.5rem;
+    }
+
+    font-weight: 300;
+    letter-spacing: 4.17px;
+    font-size: 3.32rem;
+    text-align: center;
+    margin: 0;
     height: 30%;
     color: #ffffff;
   }
@@ -33,6 +49,7 @@
   &__images-container{
     @include mediaScreenMaxWidth(700px){
       flex-wrap: wrap;
+      height: auto;
       height: fit-content;
       justify-content: center;
     }

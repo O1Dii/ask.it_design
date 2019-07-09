@@ -1,7 +1,13 @@
+@import "mixins.scss";
+
 .audience-interaction-other-buttons{
   display: flex;
 
   &__type-code-button{
-    font-size: 1.12rem;
+    @include mediaScreenMaxWidth(700px){
+      font-size: 0.9em;
+    }
+
+    font-size: 1.1em;
   }
 }

@@ -1,18 +1,58 @@
+@import "mixins.scss";
+
 .about-us{
   &__wrapper{
+    @include mediaScreenMaxWidth(700px){
+      width: 80%;
+      margin: 50px auto 80px;
+    }
     width: 80%;
     margin: auto 5% 100px 15%;
   }
 
   &__title-container{
+    @include mediaScreenMaxWidth(700px){
+      margin: auto;
+    }
+
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     margin: 70px 55% 70px 35%;
   }
 
+  &__title{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 2.5rem;
+    }
+
+    font-weight: 300;
+    letter-spacing: 4.17px;
+    font-size: 3.32rem;
+    text-align: center;
+    color: #037693;
+    margin: 0;
+  }
+
   &__text-container{
+    @include mediaScreenMaxWidth(700px){
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    font-size: 1rem;
     width: 48%;
   }
 
   &__circles{
+    @include mediaScreenMaxWidth(700px){
+      margin: 40px auto;
+      padding: 0;
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -21,15 +61,42 @@
   }
 
   &__content-container{
+    @include mediaScreenMaxWidth(700px){
+      flex-direction: column-reverse;
+    }
+
     display: flex;
     //justify-content: space-evenly;
   }
 
   &__circle-container{
+    @include mediaScreenMaxWidth(700px){
+      font-size: .8rem;
+      margin: 0 10px;
+    }
+
+    @include mediaScreenMaxWidth(580px){
+      font-size: .7rem;
+      margin: 0 10px;
+    }
+
+    font-size: 1rem;
     margin: 0 20px;
   }
 
   &__logo{
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    height: intrinsic;
+    height: -moz-max-content;
+    height: -webkit-max-content;
+    display: flex;
+    position: relative;
+    padding: .5em;
+    height: 2rem;
+    border: 1px solid #ffffff;
+    border-right: none;
     width: 16rem;
     top: 6.95rem;
     left: -20%;

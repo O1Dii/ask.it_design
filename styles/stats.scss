@@ -4,34 +4,34 @@
   justify-content: center;
 
   &__outer-circle{
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 4.56em;
+    height: 4.56em;
     border-radius: 50%;
-    margin: auto auto 10px;
+    margin: auto auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   &__inner-circle{
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 6rem;
+    width: 3em;
+    height: 3em;
+    border-radius: 6em;
     border: 1px solid #ffffff;
   }
 
   &__name{
     white-space: nowrap;
-    margin: 25px auto;
-    font-size: 1.4rem;
+    margin: 1em auto;
+    font-size: 1.4em;
     text-align: center;
     //font-family: Lato;
     font-weight: 200;
   }
 
   &__numbers{
-    margin: 10px 0 0;
-    font-size: 3.32rem;
+    margin: 0.3em 0 0;
+    font-size: 3.32em;
     text-align: center;
     //font-family: Lato;
     font-weight: 400;

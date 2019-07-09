@@ -16,6 +16,9 @@
 
   &__title-container{
     @include mediaScreenMaxWidth(700px){
+      width: intrinsic;
+      width: -moz-max-content;
+      width: -webkit-max-content;
       width: fit-content;
       margin: auto;
     }

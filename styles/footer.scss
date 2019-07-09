@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 .footer{
   background-color: #0d0d0d;
 
@@ -7,6 +9,12 @@
   }
 
   &__content-wrapper{
+    @include mediaScreenMaxWidth(700px){
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 3rem;
+    }
+
     display: flex;
     justify-content: space-between;
     margin: 0 auto 5rem;
@@ -14,6 +22,10 @@
   }
 
   &__first-col{
+    @include mediaScreenMaxWidth(700px){
+      width: 100%;
+    }
+
     width: 19%;
   }
 
@@ -28,22 +40,47 @@
     justify-content: flex-start;
   }
 
+  &__second-col, &__third-col{
+    @include mediaScreenMaxWidth(700px){
+      display: none;
+    }
+  }
+
   &__fourth-col{
+    @include mediaScreenMaxWidth(700px){
+      height: auto;
+      height: fit-content;
+      margin-top: 3rem;
+    }
+
     align-items: center;
   }
 
   &__icons{
+    @include mediaScreenMaxWidth(700px){
+      justify-content: space-evenly;
+    }
+
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
   &__icon{
+    @include mediaScreenMaxWidth(700px){
+      height: 5rem;
+    }
+
     height: 30%;
     margin: auto;
   }
 
   &__text-under-icon{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
     color: #ffffff;
     text-align: center;
     font-size: 1rem;
@@ -60,15 +97,26 @@
   }
 
   &__title{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 1.5rem;
+    }
     color: #ffffff;
   }
 
   &__subtitle{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 1.1rem;
+      margin: 2rem;
+    }
     font-size: .88rem;
     color: #ffffff;
   }
 
   &__email-address{
+    @include mediaScreenMaxWidth(700px){
+      width: 80%;
+    }
+
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #ffffff;
