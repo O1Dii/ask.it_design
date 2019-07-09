@@ -1,0 +1,36 @@
+@import "mixins.scss";
+
+.features{
+  &__wrapper{
+    @include mediaScreenMaxWidth(720px) {
+      margin: 50px 0;
+    }
+
+    margin: 124.8px auto 147.2px;
+  }
+
+  &__items-table{
+    width: 80%;
+    margin: 40px auto 0;
+  }
+
+  &__title-container{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: auto;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 2.5rem;
+    }
+
+    font-weight: 300;
+    letter-spacing: 4.17px;
+    font-size: 3.32rem;
+    text-align: center;
+    color: #037693;
+    margin: 0;
+  }
+}

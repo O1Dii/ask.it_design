@@ -1,0 +1,142 @@
+@import "mixins.scss";
+
+.footer{
+  background-color: #0d0d0d;
+
+  &__wrapper{
+    width: 80%;
+    margin: auto;
+  }
+
+  &__content-wrapper{
+    @include mediaScreenMaxWidth(700px){
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 3rem;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 5rem;
+    padding-top: 5rem;
+  }
+
+  &__first-col{
+    @include mediaScreenMaxWidth(700px){
+      width: 100%;
+    }
+
+    width: 19%;
+  }
+
+  &__first-col, &__second-col, &__third-col, &__fourth-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__second-col, &__third-col, &__fourth-col {
+    margin-top: 4.9rem;
+    justify-content: flex-start;
+  }
+
+  &__second-col, &__third-col{
+    @include mediaScreenMaxWidth(700px){
+      display: none;
+    }
+  }
+
+  &__fourth-col{
+    @include mediaScreenMaxWidth(700px){
+      height: auto;
+      height: fit-content;
+      margin-top: 3rem;
+    }
+
+    align-items: center;
+  }
+
+  &__icons{
+    @include mediaScreenMaxWidth(700px){
+      justify-content: space-evenly;
+    }
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon{
+    @include mediaScreenMaxWidth(700px){
+      height: 5rem;
+    }
+
+    height: 30%;
+    margin: auto;
+  }
+
+  &__text-under-icon{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &__list-item{
+    color: #ffffff;
+    font-size: .88rem;
+  }
+
+  &__list{
+    list-style: none;
+    padding: 0;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 1.5rem;
+    }
+    color: #ffffff;
+  }
+
+  &__subtitle{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 1.1rem;
+      margin: 2rem;
+    }
+    font-size: .88rem;
+    color: #ffffff;
+  }
+
+  &__email-address{
+    @include mediaScreenMaxWidth(700px){
+      width: 80%;
+    }
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    background-image: url("img/Envelope.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 20px;
+    text-align: center;
+  }
+
+  &__rights-reserved{
+    color: #ffffff;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &__rights-reserved-container{
+    padding: 1rem;
+  }
+}

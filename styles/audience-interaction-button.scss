@@ -1,0 +1,20 @@
+@import "mixins.scss";
+
+.audience-interaction-button{
+  @include mediaScreenMaxWidth(720px){
+    padding: 0.5em;
+    font-size: 1em;
+  }
+
+  white-space: nowrap;
+  //height: 3.04rem;
+  color: white;
+  //font-family: "Lato - Semibold";
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 0.6em 0.7em;
+
+  &:focus{
+    border: 2px solid #ffffff;
+  }
+}

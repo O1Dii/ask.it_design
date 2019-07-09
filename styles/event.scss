@@ -1,0 +1,132 @@
+@import "mixins.scss";
+
+.event{
+  &__wrapper{
+    @include mediaScreenMaxWidth(700px){
+      margin: 0;
+      background-color: transparent;
+    }
+
+    //height: 516.8px;
+    //max-width: 25vw;
+    background-color: #ffffff;
+    margin: auto 3px;
+    min-width: 25vw;
+  }
+
+  &__title-container{
+    @include mediaScreenMaxWidth(700px){
+      width: intrinsic;
+      width: -moz-max-content;
+      width: -webkit-max-content;
+      width: fit-content;
+      margin: auto;
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    height: 100%;
+    //font-size: 1vw;
+  }
+
+  &__content-container{
+    @include mediaScreenMaxWidth(700px){
+      margin: 0;
+    }
+
+    margin: 7% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10%;
+  }
+
+  &__inner-content-container{
+    @include mediaScreenMaxWidth(700px){
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title-first{
+    @include mediaScreenMaxWidth(700px){
+      display: inline;
+      font-size: 2.2rem;
+    }
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    //font-family: "Lato Light";
+  }
+
+  &__title-second{
+    @include mediaScreenMaxWidth(700px){
+      display: inline;
+      font-size: 2.8rem;
+    }
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.56rem;
+    margin: 0;
+    text-transform: uppercase;
+    //font-family: "Lato - Bold";
+    font-weight: 700;
+  }
+
+  &__text{
+    @include mediaScreenMaxWidth(700px){
+      color: #ffffff;
+      margin: 0;
+    }
+
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: center;
+    //font-family: Lato;
+    font-weight: 300;
+    line-height: 33.33px;
+    letter-spacing: .27px;
+  }
+
+  &__icon{
+    @include mediaScreenMaxWidth(700px){
+      height: 4.5rem;
+    }
+
+    object-fit: contain;
+    height: 3.5rem;
+  }
+
+  &__button{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    border-style: none;
+    padding: .2em 1em;
+    margin: 20px auto;
+    border-radius: 100px;
+    font-size: 1.5rem;
+  }
+
+  &__wrapper:hover{
+    @include mediaScreenMaxWidth(700px){
+      box-shadow: none;
+      transform: none;
+    }
+    box-shadow: 0 0 30px grey;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+}

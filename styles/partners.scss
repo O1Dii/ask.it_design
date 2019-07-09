@@ -1,0 +1,80 @@
+@import "mixins.scss";
+
+.partners{
+  background-image: url("img/partners_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper{
+    height: 441px;
+    padding-top: 15px;
+  }
+
+  &__title-container{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: auto;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 2.5rem;
+    }
+
+    font-weight: 300;
+    letter-spacing: 4.17px;
+    font-size: 3.32rem;
+    text-align: center;
+    margin: 0;
+    height: 30%;
+    color: #ffffff;
+  }
+
+  &__images{
+    @include mediaScreenMaxWidth(700px){
+      width: 60%;
+      height: 100%;
+      min-width: 300px;
+      align-items: flex-end;
+    }
+
+    height: 70%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+  }
+
+  &__images-container{
+    @include mediaScreenMaxWidth(700px){
+      flex-wrap: wrap;
+      height: auto;
+      height: fit-content;
+      justify-content: center;
+    }
+
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon{
+    @include mediaScreenMaxWidth(700px) {
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+    }
+    object-fit: contain;
+  }
+
+  &__arrow{
+    @include mediaScreenMaxWidth(700px){
+      display: none;
+    }
+
+    object-fit: contain;
+  }
+}

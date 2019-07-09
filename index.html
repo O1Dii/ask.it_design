@@ -3,37 +3,453 @@
 <head>
     <meta charset="UTF-8">
     <title>ask.it</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav_bg">
-            <div class="nav_bg__black"></div>
-            <div class="nav_bg__blue"></div>
-        </div>
-        <div class="nav_wrapper">
-            <div class="nav__icon_container">
-                <img src="img/ask_it_icon.png" alt="icon">
+    <header class="nav">
+        <div class="nav__wrapper">
+            <div class="nav__bg nav-bg">
+                <div class="nav-bg__black"></div>
+                <div class="nav-bg__blue"></div>
             </div>
-            <ul class="nav__list">
-                <li class="nav__list_element"><a href="#"><p>Home</p></a></li>
-                <li class="nav__list_element"><a href="#"><p>How it works</p></a></li>
-                <li class="nav__list_element"><a href="#"><p>Features</p></a></li>
-                <li class="nav__list_element"><a href="#"><p>Partners</p></a></li>
-                <li class="nav__list_element"><a href="#"><p>Events</p></a></li>
-                <li class="nav__list_element"><a href="#"><p>About us</p></a></li>
-            </ul>
-            <ul class="nav__log-reg_container">
-                <li class="nav__log-reg_icon-text-container">
-                    <img class="nav__log-reg_icon" src="img/sign-in.png" alt="icon">
-                    <p class="nav__log-reg_text">Log in</p>
-                </li>
-                <li class="nav__log-reg_icon-text-container">
-                    <img class="nav__log-reg_icon" src="img/avatar.png" alt="icon">
-                    <p class="nav__log-reg_text">Register</p>
-                </li>
-            </ul>
+            <div class="nav__content-wrapper">
+                <div class="nav__icon-menu-wrapper">
+                    <div class="nav__empty-div"></div>
+                    <div class="nav__icon-container">
+                        <img class="nav__icon" src="img/ask_it_icon.png" alt="icon">
+                    </div>
+                    <label class="nav__toggle-label" for="nav-toggle">
+                        <img class="nav__menu-button" src="img/Menu.png" alt="Menu">
+                    </label>
+                </div>
+                <input type="checkbox" class="nav__toggle" id="nav-toggle">
+                <nav class="nav__list-container">
+                    <ul class="nav__list nav-list">
+                        <li class="nav-list__element"><a class="nav-list__href" href="#audience-interaction"><p class="nav-list__text">Home</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#how-it-works"><p class="nav-list__text">How it works</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#features"><p class="nav-list__text">Features</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#partners"><p class="nav-list__text">Partners</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#events"><p class="nav-list__text">Events</p></a></li>
+                        <li class="nav-list__element"><a class="nav-list__href" href="#about-us"><p class="nav-list__text">About us</p></a></li>
+                    </ul>
+                    <ul class="nav__log-reg log-reg">
+                        <li class="log-reg__icon-text-container">
+                            <img class="log-reg__icon" src="img/sign-in.png" alt="icon">
+                            <p class="log-reg__text">Log in</p>
+                        </li>
+                        <li class="log-reg__icon-text-container">
+                            <img class="log-reg__icon" src="img/avatar.png" alt="icon">
+                            <p class="log-reg__text">Register</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </header>
+    <main>
+        <div id="audience-interaction" class="audience-interaction">
+            <div class="audience-interaction__wrapper">
+                <div class="audience-interaction__content-wrapper">
+                    <div class="audience-interaction__text">
+                        <div class="audience-interaction__titles-container">
+                            <div class="audience-interaction__titles-lines-container">
+                                <h1 class="audience-interaction__title">Live Interaction From Audience</h1>
+                                <div class="audience-interaction__lines-container">
+                                    <div class="audience-interaction__lines audience-interaction-lines">
+                                        <div class="audience-interaction-lines__first-line white-line"></div>
+                                        <div class="audience-interaction-lines__second-line white-line"></div>
+                                        <div class="audience-interaction-lines__third-line white-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="audience-interaction__subtitle">Q&A, Polls and Slide-sharing for Events</h3>
+                        </div>
+                        <div class="audience-interaction__buttons audience-interaction-buttons">
+                            <button class="audience-interaction-buttons__create-event-button transparent-button audience-interaction-button">Create a event</button>
+                            <div class="audience-interaction__other-buttons audience-interaction-other-buttons">
+                                <button class="audience-interaction-other-buttons__join-event-button transparent-button audience-interaction-button">Join event</button>
+                                <button class="audience-interaction-other-buttons__type-code-button white-button audience-interaction-button">type code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="audience-interaction__image-container">
+                        <img class="audience-interaction__image" src="img/phone.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="how-it-works" class="how-it-works">
+            <div class="how-it-works__wrapper">
+                <div class="how-it-works__title-container">
+                    <h1 class="how-it-works__title title">How it works</h1>
+                    <div class="lines left-lines">
+                        <div class="lines__bigger-line blue-line"></div>
+                        <div class="lines__smaller-line blue-line"></div>
+                    </div>
+                </div>
+                <div class="how-it-works__items-container">
+                    <div class="how-it-works__item how-it-works__item_selected how-it-works-item">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
+                                <img class="item-icon" src="img/mobile.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p class="how-it-works-item__text">Create a FREE account with us</p>
+                    </div>
+                    <div class="how-it-works__item">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
+                                <img class="item-icon" src="img/discuss-issue.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p class="how-it-works-item__text">Create your own event or Q&A session</p>
+                    </div>
+                    <div class="how-it-works__item">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
+                                <img class="item-icon" src="img/blackberry-qr-code-variant.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p class="how-it-works-item__text">Share your meeting code with the participants</p>
+                    </div>
+                    <div class="how-it-works__item">
+                        <div class="how-it-works-item__button-container">
+                            <button class="how-it-works-item__button white-button">
+                                <img class="item-icon" src="img/favorites-button.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p class="how-it-works-item__text">Run your meeting successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="interaction" class="interaction">
+            <div class="interaction__wrapper">
+                <div class="interaction__logo interaction-logo">
+                    <div class="interaction-logo__dot dot"></div>
+                    <div class="interaction-logo__line line"></div>
+                    <h1 class="interaction-logo__text">Interaction</h1>
+                </div>
+                <div class="interaction__text-container">
+                    <h1 class="interaction__title">Interact with thousand of audience in no time</h1>
+                    <h3 class="interaction__subtitle">Its easier than ever</h3>
+                    <div class="interaction__line"></div>
+                    <p class="interaction__text"><span class="interaction__inner-text-span">it’s never been easier to connect with people who speak this language. They
+                        want others to build up their self-image and confidence, and digital connectivity
+                        creates ample opportunity to tell your audience why they’re awesome. Move
+                        beyond general flattery and focus on specifics. Ask yourself, “How can I make
+                        my audience feel good about themselves?”</span>
+                        One option might be developing a blog series that focuses on industry wins, or
+                        spotlights companies that are doing something right. Or if you share an article
+                        with your network, you could point out a quote from the author that really
+                        resonates with you. Don’t just tell your audience you love them; tell them why.
+                    </p>
+                </div>
+                <div class="interaction__images">
+                    <div class="interaction__first-rectangle-container rectangle-container">
+                        <img class="rectangle-container__rounded-rectangle" src="img/ask-question-bg.png" alt="">
+                        <p class="rectangle-container__rounded-rectangle-text">Ask a Question Right Now</p>
+                    </div>
+                    <div class="interaction__second-rectangle-container rectangle-container">
+                        <img class="rectangle-container__rounded-rectangle" src="img/choose-from-questions-bg.png" alt="">
+                        <p class="rectangle-container__rounded-rectangle-text">Choose From Questions</p>
+                    </div>
+                    <div class="interaction__third-rectangle-container rectangle-container">
+                        <img class="rectangle-container__rounded-rectangle" src="img/select-from-top-questions-bg.png" alt="">
+                        <p class="rectangle-container__rounded-rectangle-text">Select From Top Questions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="features" class="features">
+            <div class="features__wrapper">
+                <div class="features__title-container">
+                    <h1 class="features__title title">Features</h1>
+                    <div class="lines left-lines">
+                        <div class="lines__bigger-line blue-line"></div>
+                        <div class="lines__smaller-line blue-line"></div>
+                    </div>
+                </div>
+                <div class="features__items-container">
+                    <table class="features__items-table features-table">
+                        <tbody>
+                            <tr class="features-table__row features-table__row_first">
+                                <td class="features-table__item table-item ask-question">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/microphone.png">
+                                    </div>
+                                    <p class="table-item__text">Ask a question</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item raise-poll">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/bar-chart.png">
+                                    </div>
+                                    <p class="table-item__text">Raise a poll</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item view-statistics">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/insight.png">
+                                    </div>
+                                    <p class="table-item__text">View statistics</p>
+                                </td>
+                            </tr>
+                            <tr class="features-table__row features-table__row_second">
+                                <td class="features-table__horizontal-line table-horizontal-line">
+                                    <div class="table-horizontal-line__line blue-line"></div>
+                                </td>
+                                <td></td>
+                                <td class="features-table__horizontal-line table-horizontal-line">
+                                    <div class="table-horizontal-line__line blue-line"></div>
+                                </td>
+                                <td></td>
+                                <td class="features-table__horizontal-line table-horizontal-line">
+                                    <div class="table-horizontal-line__line blue-line"></div>
+                                </td>
+                            </tr>
+                            <tr class="features-table__row features-table__row_third">
+                                <td class="features-table__item table-item vote-question">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/medal.png">
+                                    </div>
+                                    <p class="table-item__text">Vote a question</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item create-survey">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/flag.png">
+                                    </div>
+                                    <p class="table-item__text">Create a survey</p>
+                                </td>
+                                <td class="features-table__vertical-line table-vertical-line">
+                                    <div class="table-vertical-line__line blue-line"></div>
+                                </td>
+                                <td class="features-table__item table-item privacy-ensured">
+                                    <div class="table-item__icon-container">
+                                        <img class="table-item__icon" src="img/padlock.png">
+                                    </div>
+                                    <p class="table-item__text">Privacy ensured</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="partners" class="partners">
+            <div class="partners__wrapper">
+                <div class="partners__title-container">
+                    <h1 class="partners__title title">Partners</h1>
+                    <div class="lines right-lines">
+                        <div class="lines__bigger-line white-line"></div>
+                        <div class="lines__smaller-line white-line"></div>
+                    </div>
+                </div>
+                <div class="partners__images">
+                    <div class="partners__images-container">
+                        <img class="partners__arrow" src="img/back-arrow.svg" alt="">
+                        <img class="partners__icon" src="img/McCANN.png" alt="">
+                        <img class="partners__icon" src="img/un-women.png" alt="">
+                        <img class="partners__icon" src="img/accenture.png" alt="">
+                        <img class="partners__icon" src="img/cisco.png" alt="">
+                        <img class="partners__icon" src="img/eventbrite.png" alt="">
+                        <img class="partners__icon" src="img/zappos.png" alt="">
+                        <img class="partners__icon" src="img/siemens.png" alt="">
+                        <img class="partners__arrow" src="img/forward-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="events" class="events">
+            <div class="events__wrapper">
+                <div class="events__title-container">
+                    <h1 class="events__title title">Events</h1>
+                    <div class="lines left-lines mobile-hidden">
+                        <div class="lines__bigger-line blue-line"></div>
+                        <div class="lines__smaller-line blue-line"></div>
+                    </div>
+                </div>
+                <div class="events__container">
+                    <div class="event external-event">
+                        <div class="event__wrapper">
+                            <div class="event__title-container">
+                                <p class="event__title-first">EXTERNAL</p>
+                                <h1 class="event__title-second">EVENT</h1>
+                            </div>
+                            <div class="full-line green-line mobile-hidden"></div>
+                            <div class="event__content-container">
+                                <div class="event__inner-content-container">
+                                    <img class="event__icon mobile-white-icon" src="img/usb-connection.png" alt="">
+                                    <p class="event__text">Offers customizable
+                                        on-line registration service
+                                        for event organizers. Includes
+                                        pricing, features, and types of accounts.
+                                    </p>
+                                </div>
+                                <button class="event__button green-line green-mobile-reverse">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event interactive-event">
+                        <div class="event__wrapper">
+                            <div class="event__title-container">
+                                <p class="event__title-first">INTERACTIVE</p>
+                                <h1 class="event__title-second">EVENT</h1>
+                            </div>
+                            <div class="full-line red-line mobile-hidden"></div>
+                            <div class="event__content-container">
+                                <div class="event__inner-content-container">
+                                    <img class="event__icon mobile-white-icon" src="img/interactivity.png" alt="">
+                                    <p class="event__text">Offers customizable
+                                        on-line registration service
+                                        for event organizers. Includes
+                                        pricing, features, and types of accounts.
+                                    </p>
+                                </div>
+                                <button class="event__button red-line red-mobile-reverse">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event internal-event">
+                        <div class="event__wrapper">
+                            <div class="event__title-container">
+                                <p class="event__title-first">INTERNAL</p>
+                                <h1 class="event__title-second">EVENT</h1>
+                            </div>
+                            <div class="full-line orange-line mobile-hidden"></div>
+                            <div class="event__content-container">
+                                <div class="event__inner-content-container">
+                                    <img class="event__icon mobile-white-icon" src="img/hard-disk.png" alt="">
+                                    <p class="event__text">Offers customizable
+                                        on-line registration service
+                                        for event organizers. Includes
+                                        pricing, features, and types of accounts.
+                                    </p>
+                                </div>
+                                <button class="event__button orange-line green-mobile-reverse">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-us" class="about-us">
+            <div class="about-us__wrapper">
+                <div class="about-us__logo about-us-logo interaction-logo">
+                    <div class="about-us-logo__dot interaction-logo__dot"></div>
+                    <div class="about-us-logo__line interaction-logo__line"></div>
+                    <h1 class="about-us-logo__text interaction-logo__text">Know us</h1>
+                </div>
+                <div class="about-us__title-container">
+                    <h1 class="about-us__title title">About us</h1>
+                    <div class="lines right-lines">
+                        <div class="lines__bigger-line blue-line"></div>
+                        <div class="lines__smaller-line blue-line"></div>
+                    </div>
+                </div>
+                <div class="about-us__content-container">
+                    <div class="about-us__text-container about-us-text">
+                        <h1 class="about-us-text__title">Who we are?</h1>
+                        <h3 class="about-us-text__subtitle">What we can do for you</h3>
+                        <div class="about-us-text__line blue-line"></div>
+                        <p class="about-us-text__text"><span class=about-us-text__inner-text-span>it’s never been easier to connect with people who speak this language. They
+                            want others to build up their self-image and confidence, and digital connectivity
+                            creates ample opportunity to tell your</span>
+                            One option might be developing a blog series that focuses on industry wins, or
+                            spotlights companies that are doing something right. Or if you share an article
+                            with your network.
+                        </p>
+                    </div>
+                    <div class="about-us__circles">
+                        <div class="about-us__circle-container stats">
+                            <div class="stats__outer-circle green-transparent-line">
+                                <div class="stats__inner-circle green-line"></div>
+                            </div>
+                            <h1 class="stats__numbers green-text">20,145</h1>
+                            <p class="stats__name">audience served</p>
+                            <div class="full-line green-line"></div>
+                        </div>
+                        <div class="about-us__circle-container stats">
+                            <div class="stats__outer-circle red-transparent-line">
+                                <div class="stats__inner-circle red-line"></div>
+                            </div>
+                            <h1 class="stats__numbers red-text">5480</h1>
+                            <p class="stats__name">hours of service</p>
+                            <div class="full-line red-line"></div>
+                        </div>
+                        <div class="about-us__circle-container stats">
+                            <div class="stats__outer-circle orange-transparent-line">
+                                <div class="stats__inner-circle orange-line"></div>
+                            </div>
+                            <h1 class="stats__numbers orange-text">715</h1>
+                            <p class="stats__name">event covered</p>
+                            <div class="full-line orange-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__content-wrapper">
+                <div class="footer__first-col">
+                    <img class="footer__icon" src="img/icon-without-color.png" alt="">
+                    <p class="footer__text-under-icon">We are AskVote.io. We are a online
+                        platform for operating events effectively.
+                        We're working on a web application for facilitating anonymous
+                        questions and answers sessions. The application is to be used
+                        mainly by corporate and government customers.
+                    </p>
+                </div>
+                <div class="footer__second-col">
+                    <h3 class="footer__title">Useful links</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Home</li>
+                        <li class="footer__list-item">How it works</li>
+                        <li class="footer__list-item">Terms and conditions</li>
+                        <li class="footer__list-item">Cookies policy</li>
+                        <li class="footer__list-item">Contact Us</li>
+                        <li class="footer__list-item">About us</li>
+                        <li class="footer__list-item">Features</li>
+                        <li class="footer__list-item">Event list</li>
+                    </ul>
+                </div>
+                <div class="footer__third-col">
+                    <h3 class="footer__title">My account</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">New account</li>
+                        <li class="footer__list-item">Open a account</li>
+                        <li class="footer__list-item">Manage</li>
+                        <li class="footer__list-item">Change password</li>
+                        <li class="footer__list-item">Delete account</li>
+                        <li class="footer__list-item">Dashboard</li>
+                    </ul>
+                </div>
+                <div class="footer__fourth-col">
+                    <h3 class="footer__title">We are social</h3>
+                    <div class="footer__icons">
+                        <img class="footer__social-icon" src="img/social(1).png" alt="">
+                        <img class="footer__social-icon" src="img/social(2).png" alt="">
+                        <img class="footer__social-icon" src="img/social-media.png" alt="">
+                        <img class="footer__social-icon" src="img/social.png" alt="">
+                    </div>
+                    <h6 class="footer__subtitle">Subscribe to our newsletter</h6>
+                    <input class="footer__email-address" placeholder="Email address">
+                </div>
+            </div>
+            <div class="footer__rights-reserved-container">
+                <h6 class="footer__rights-reserved">© 2016 AskVote.io, all rights received</h6>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

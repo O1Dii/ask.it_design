@@ -1,0 +1,47 @@
+@import "mixins.scss";
+
+.events{
+  background-color: #e8e8e8;
+
+  &__wrapper{
+    @include mediaScreenMaxWidth(700px){
+      width: 100%;
+      padding: 0;
+    }
+
+    width: 85%;
+    margin: auto;
+    padding-top: 64px;
+  }
+
+  &__title-container{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: auto;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(700px){
+      display: none;
+    }
+
+    font-weight: 300;
+    letter-spacing: 4.17px;
+    font-size: 3.32rem;
+    text-align: center;
+    color: #037693;
+    margin: auto;
+  }
+
+  &__container{
+    @include mediaScreenMaxWidth(700px){
+      padding: 0;
+      flex-direction: column;
+    }
+
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,82 @@
+@import "mixins.scss";
+
+.about-us-text{
+  &__title, &__subtitle{
+    @include mediaScreenMaxWidth(700px){
+      margin: auto;
+    }
+
+    margin: 0;
+    color: #037693;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(700px){
+      text-align: center;
+      font-size: 2.7em;
+    }
+
+    width: 60%;
+    min-width: 18.8rem;
+    //font-family: Lato;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 3.32rem;
+  }
+
+  &__subtitle{
+    @include mediaScreenMaxWidth(700px){
+      text-align: center;
+      font-size: 1.5em;
+      margin: .5rem;
+      letter-spacing: .1rem;
+    }
+
+    display: inline-block;
+    //font-family: Lato;
+    font-weight: 500;
+    font-size: 2.1em;
+    //letter-spacing: .1rem;
+  }
+
+  &__line{
+    @include mediaScreenMaxWidth(720px) {
+      width: 20%;
+      margin: auto;
+    }
+
+    display: inline-block;
+    height: 1px;
+    min-width: 4rem;
+    vertical-align: middle;
+    width: 30%;
+  }
+
+  &__text{
+    @include mediaScreenMaxWidth(700px){
+      display: inline;
+      text-align: center;
+      line-height: initial;
+      letter-spacing: initial;
+      margin: 30px auto;
+    }
+
+    //font-family: Lato;
+    letter-spacing: .25px;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000000;
+  }
+
+  &__inner-text-span{
+    @include mediaScreenMaxWidth(720px){
+      display: initial;
+      margin-bottom: 0;
+    }
+
+    display: block;
+    margin-bottom: 12px;
+  }
+}

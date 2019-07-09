@@ -1,0 +1,39 @@
+.stats{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__outer-circle{
+    width: 4.56em;
+    height: 4.56em;
+    border-radius: 50%;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__inner-circle{
+    width: 3em;
+    height: 3em;
+    border-radius: 6em;
+    border: 1px solid #ffffff;
+  }
+
+  &__name{
+    white-space: nowrap;
+    margin: 1em auto;
+    font-size: 1.4em;
+    text-align: center;
+    //font-family: Lato;
+    font-weight: 200;
+  }
+
+  &__numbers{
+    margin: 0.3em 0 0;
+    font-size: 3.32em;
+    text-align: center;
+    //font-family: Lato;
+    font-weight: 400;
+  }
+}

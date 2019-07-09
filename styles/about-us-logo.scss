@@ -1,0 +1,22 @@
+@import "mixins.scss";
+
+.about-us-logo{
+  @include mediaScreenMaxWidth(720px){
+    display: none;
+  }
+
+  border-color: #037693;
+
+  &__dot{
+    background-color: #037693;
+  }
+
+  &__line{
+    background-color: #037693;
+    width: 40%;
+  }
+
+  &__text{
+    color: #037693;
+  }
+}

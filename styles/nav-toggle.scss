@@ -1,0 +1,8 @@
+@import "mixins.scss";
+
+#nav-toggle:checked + .nav__list-container{
+  @include mediaScreenMaxWidth(720px){
+    display: flex;
+    flex-direction: column;
+  }
+}

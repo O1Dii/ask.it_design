@@ -1,0 +1,11 @@
+@import "mixins.scss";
+
+.item-icon{
+  @include mediaScreenMaxWidth(720px){
+    width: 60px;
+    height: 60px;
+  }
+
+  height: 92px;
+  width: 92px;
+}

@@ -1,0 +1,17 @@
+@import "mixins.scss";
+
+.internal-event .event__title-container{
+  @include mediaScreenMaxWidth(700px){
+    background-image: none;
+  }
+
+  background-image: url("img/internal-event.png");
+}
+
+
+.internal-event{
+  @include mediaScreenMaxWidth(700px){
+    background-image: url("img/internal-event.png");
+    background-size: cover;
+  }
+}

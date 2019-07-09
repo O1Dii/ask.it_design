@@ -1,0 +1,151 @@
+@import "mixins.scss";
+
+html{
+  font-size: 16px;
+}
+
+body{
+  width: 99.2vw;
+}
+
+a{
+  color: #f0f0f0;
+  outline: none;
+  text-decoration: none;
+}
+
+button:focus, button:active{
+  outline: none;
+  border: none;
+}
+
+.lines{
+  &__bigger-line{
+    @include mediaScreenMaxWidth(700px){
+      height: 3px;
+    }
+
+    height: 7px;
+    border-radius: 10px;
+    width: 4.08rem;
+  }
+
+  &__smaller-line{
+    @include mediaScreenMaxWidth(700px){
+      height: 3px;
+    }
+
+    height: 7px;
+    border-radius: 10px;
+    width: .64rem;
+    margin: auto .4rem;
+  }
+}
+
+.transparent-button{
+  border: 2px solid white;
+  background-color: transparent;
+  color: #f0f0f0;
+}
+
+.white-button{
+  border: 2px solid white;
+  background-color: white;
+  color: #037693;
+}
+
+.full-line{
+  margin-top: 2px;
+  height: 2px;
+  width: 100%;
+}
+
+.left-lines{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-lines{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.white-line{
+  background-color: white;
+}
+
+.blue-line{
+  background-color: #037693;
+}
+
+.green-line{
+  background-color: #4ca59a;
+}
+
+.red-line{
+  background-color: #f26250;
+}
+
+.orange-line{
+  background-color: #f0a765;
+}
+
+.green-transparent-line{
+  background-color: #4ca59a50;
+}
+
+.red-transparent-line{
+  background-color: #f2625050;
+}
+
+.orange-transparent-line{
+  background-color: #f0a76550;
+}
+
+.green-text{
+  color: #4ca59a;
+}
+
+.red-text{
+  color: #f26250;
+}
+
+.orange-text{
+  color: #f0a765;
+}
+
+.mobile-hidden{
+  @include mediaScreenMaxWidth(700px){
+    display: none;
+  }
+}
+
+.mobile-white-icon{
+  @include mediaScreenMaxWidth(700px){
+    filter: invert(100%) sepia(0%) saturate(100%) brightness(10000%) contrast(100%);
+  }
+}
+
+.green-mobile-reverse{
+  @include mediaScreenMaxWidth(700px){
+    background-color: #ffffff;
+    color: #4ca59a;
+  }
+  color: #ffffff;
+}
+
+.red-mobile-reverse{
+  @include mediaScreenMaxWidth(700px){
+    background-color: #ffffff;
+    color: #f26250;
+  }
+  color: #ffffff;
+}
+
+.orange-mobile-reverse{
+  @include mediaScreenMaxWidth(700px){
+    background-color: #ffffff;
+    color: #f0a765;
+  }
+  color: #ffffff;
+}

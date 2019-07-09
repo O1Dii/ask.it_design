@@ -1,0 +1,16 @@
+@import "mixins.scss";
+
+.interactive-event .event__title-container{
+  @include mediaScreenMaxWidth(700px){
+    background-image: none;
+  }
+
+  background-image: url("img/interactive-event.png");
+}
+
+.interactive-event{
+  @include mediaScreenMaxWidth(700px){
+    background-image: url("img/interactive-event.png");
+    background-size: cover;
+  }
+}

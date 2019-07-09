@@ -1,0 +1,115 @@
+@import "mixins.scss";
+
+.audience-interaction{
+  width: 100%;
+  background-image: url("img/header_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper{
+    @include mediaScreenMaxWidth(720px) {
+      height: 24rem;
+    }
+
+    height: 58rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content-wrapper{
+    @include mediaScreenMaxWidth(720px){
+      top: 25%;
+      margin: auto 5%
+    }
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__image-container{
+    @include mediaScreenMaxWidth(720px){
+      display: none;
+    }
+    margin-top: 2.3rem;
+    width: 32%;
+  }
+
+  &__image{
+    width: 100%;
+    max-width: 26.94rem;
+    max-height: 54.9rem;
+  }
+
+  &__text{
+    @include mediaScreenMaxWidth(720px){
+      width: 100%;
+    }
+
+    width: 62%;
+  }
+
+  &__titles-container{
+    @include mediaScreenMaxWidth(700px){
+      font-size: 0.8rem;
+    }
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  &__titles-lines-container{
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title{
+    @include mediaScreenMaxWidth(720px){
+      font-size: 2.2em;
+    }
+
+    //white-space: nowrap;
+    color: white;
+    font-size: 3.32em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__subtitle{
+    @include mediaScreenMaxWidth(720px){
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    color: white;
+    //font-family: Lato;
+    font-size: 1.84em;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  &__lines{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__buttons{
+    @include mediaScreenMaxWidth(720px){
+      font-size: 1.2rem;
+      margin-top: 70px;
+    }
+
+    font-size: 1rem;
+    margin-top: 13rem;
+  }
+}
