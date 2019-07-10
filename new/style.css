@@ -16,11 +16,6 @@
   display: flex;
   justify-content: center; }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
 .description {
   color: #ffffff;
   font-size: 38.5px;
@@ -47,6 +42,10 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 50px; }
+  .interaction__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 .title {
   color: #ffffff;
@@ -64,7 +63,7 @@
     top: -16px;
     font-size: 0;
     content: url("../img/lines.png");
-    display: flex;
+    display: block;
     align-self: flex-end;
     height: 7px; }
 
