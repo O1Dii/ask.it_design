@@ -7,6 +7,10 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  &__title{
+    text-shadow: 0 5px 5px black;
+  }
+
   &__image{
     height: 690px;
     width: 420px;

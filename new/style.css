@@ -29,6 +29,8 @@
   padding-right: 220px;
   justify-content: space-between;
   align-items: flex-start; }
+  .interaction__title {
+    text-shadow: 0 5px 5px black; }
   .interaction__image {
     height: 690px;
     width: 420px; }
@@ -53,7 +55,6 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  text-shadow: 0 5px 5px black;
   line-height: 70px;
   display: flex;
   flex-direction: column;
@@ -66,6 +67,83 @@
     display: block;
     align-self: flex-end;
     height: 7px; }
+  .title_header {
+    width: 100%;
+    text-align: center;
+    color: #037693;
+    font-size: 65.5px; }
+
+.about-us__logo-container {
+  width: 20%; }
+
+.about-us__logo {
+  margin-left: 25px;
+  margin-top: 132px;
+  width: 330px;
+  height: 65px;
+  min-width: auto;
+  min-width: fit-content;
+  box-sizing: border-box; }
+
+.about-us__title-container {
+  display: flex; }
+
+.about-us__header-title {
+  width: 60%;
+  text-align: center;
+  letter-spacing: 4.5px;
+  font-weight: 100;
+  padding-left: 15px;
+  margin-top: 70px;
+  align-self: center; }
+
+.about-us__title {
+  text-align: start;
+  color: #037693; }
+
+.about-us__description {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #037693; }
+
+.about-us__content {
+  padding-left: 310px;
+  padding-right: 100px;
+  display: flex; }
+
+.about-us__text-container {
+  display: flex;
+  flex-direction: column; }
+
+.logo {
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  border: 1px solid #037693;
+  border-right: none;
+  align-items: center;
+  letter-spacing: 3.33px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #037693;
+  font-weight: 100; }
+  .logo::before {
+    content: "";
+    height: 2px;
+    background-color: #037693;
+    order: 1;
+    flex-grow: 1; }
+  .logo::after {
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #037693;
+    order: 2; }
 
 * {
   font-family: 'Lato', sans-serif; }
