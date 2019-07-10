@@ -1,0 +1,30 @@
+.interaction{
+  background-image: url("../img/interaction-background.png");
+  display: flex;
+  padding-top: 280px;
+  padding-left: 215px;
+  padding-right: 220px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__image{
+    height: 690px;
+    width: 420px;
+  }
+
+  &__description{
+    margin-top: 43px;
+    margin-left: 85px;
+  }
+
+  &__buttons-container{
+    margin-left: 13px;
+    margin-top: 151px;
+  }
+
+  &__create-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 50px;
+  }
+}

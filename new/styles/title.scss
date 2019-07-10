@@ -1,0 +1,22 @@
+.title{
+  color: #ffffff;
+  font-size: 65.5px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 5px 5px black;
+  line-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &::after{
+    position: relative;
+    top: -16px;
+    font-size: 0;
+    content: url("../img/lines.png");
+    display: flex;
+    align-self: flex-end;
+    height: 7px;
+  }
+}
