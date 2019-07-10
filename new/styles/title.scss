@@ -9,14 +9,46 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  &::after{
-    position: relative;
-    top: -16px;
-    font-size: 0;
-    content: url("../img/lines.png");
-    display: block;
-    align-self: flex-end;
-    height: 7px;
+  &_big-lines {
+    &::after {
+      position: relative;
+      top: -16px;
+      font-size: 0;
+      content: url("../img/lines.png");
+      display: block;
+      align-self: flex-end;
+      height: 7px;
+    }
+  }
+
+  &_small-lines{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &::after{
+      margin-top: 10px;
+      align-self: flex-end;
+      content: "";
+      width: 80px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #037693;
+      order: 1;
+    }
+
+    &::before{
+      align-self: flex-end;
+      content: "";
+      position: relative;
+      top: -5px;
+      left: -95px;
+      width: 10px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #037693;
+      order: 2;
+    }
   }
 
   &_header{

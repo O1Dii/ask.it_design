@@ -16,10 +16,14 @@
   display: flex;
   justify-content: center; }
 
-.description {
+.subtitle {
   color: #ffffff;
   font-size: 38.5px;
   font-weight: 200; }
+
+.description {
+  line-height: 25px;
+  font-size: 20px; }
 
 .interaction {
   background-image: url("../img/interaction-background.png");
@@ -34,7 +38,7 @@
   .interaction__image {
     height: 690px;
     width: 420px; }
-  .interaction__description {
+  .interaction__subtitle {
     margin-top: 43px;
     margin-left: 85px; }
   .interaction__buttons-container {
@@ -59,7 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
-  .title::after {
+  .title_big-lines::after {
     position: relative;
     top: -16px;
     font-size: 0;
@@ -67,6 +71,30 @@
     display: block;
     align-self: flex-end;
     height: 7px; }
+  .title_small-lines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .title_small-lines::after {
+      margin-top: 10px;
+      align-self: flex-end;
+      content: "";
+      width: 80px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #037693;
+      order: 1; }
+    .title_small-lines::before {
+      align-self: flex-end;
+      content: "";
+      position: relative;
+      top: -5px;
+      left: -95px;
+      width: 10px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #037693;
+      order: 2; }
   .title_header {
     width: 100%;
     text-align: center;
@@ -85,26 +113,38 @@
   min-width: fit-content;
   box-sizing: border-box; }
 
-.about-us__title-container {
+.about-us__title-logo-container {
   display: flex; }
 
+.about-us__title-container {
+  width: 60%; }
+
 .about-us__header-title {
-  width: 60%;
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
   text-align: center;
   letter-spacing: 4.5px;
   font-weight: 100;
-  padding-left: 15px;
-  margin-top: 70px;
+  padding-left: 40px;
+  margin: 115px auto auto;
   align-self: center; }
 
 .about-us__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-align: start;
   color: #037693; }
 
-.about-us__description {
-  font-size: 20px;
-  letter-spacing: 0.5px;
+.about-us__subtitle {
+  margin: 0 0 34px;
+  font-size: 34px;
+  letter-spacing: 1.4px;
+  line-height: 33px;
   color: #037693; }
+
+.about-us__description {
+  margin: 0 0 28px; }
 
 .about-us__content {
   padding-left: 310px;
@@ -113,7 +153,14 @@
 
 .about-us__text-container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 48.5%; }
+
+.about-us__stats {
+  margin-left: 25px;
+  width: 45%;
+  margin-top: -7px;
+  height: 305px; }
 
 .logo {
   -ms-transform: rotate(-90deg);
@@ -126,7 +173,7 @@
   border: 1px solid #037693;
   border-right: none;
   align-items: center;
-  letter-spacing: 3.33px;
+  letter-spacing: 3.5px;
   padding-right: 20px;
   padding-left: 20px;
   color: #037693;
@@ -144,6 +191,62 @@
     border-radius: 50%;
     background-color: #037693;
     order: 2; }
+
+.circle {
+  border-bottom: 2px solid;
+  border-color: inherit;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 100%; }
+  .circle__title {
+    color: inherit;
+    margin: 25px auto 0;
+    font-size: 53px;
+    order: 2; }
+  .circle__text {
+    color: #000;
+    margin-top: 15px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 25px;
+    order: 1; }
+  .circle::before {
+    color: inherit;
+    margin: 0 auto;
+    content: "";
+    position: relative;
+    top: 62.5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: currentColor;
+    opacity: 0.5;
+    order: 4; }
+  .circle::after {
+    color: inherit;
+    margin: 0 auto;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: currentColor;
+    order: 3; }
+  .circle_green {
+    color: #4ca59a;
+    background-color: #4ca59a00; }
+  .circle_red {
+    color: #f26250;
+    background-color: #f2625000; }
+  .circle_orange {
+    color: #f0a765;
+    background-color: #f0a76500; }
+
+.circles-container {
+  display: flex;
+  justify-content: space-evenly; }
 
 * {
   font-family: 'Lato', sans-serif; }
