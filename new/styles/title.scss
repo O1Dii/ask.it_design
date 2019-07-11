@@ -1,13 +1,14 @@
+@import "variables.scss";
+
 .title {
     display: flex;
     flex-direction: column;
 
-    margin: 0;
     padding: 0;
 
     text-align: center;
 
-    color: #ffffff;
+    color: $bright-main-color;
 
     font-size: 65.5px;
     line-height: 70px;
@@ -45,7 +46,7 @@
             content: "";
 
             border-radius: 2px;
-            background-color: #037693;
+            background-color: $primary-color;
 
             align-self: flex-end;
             order: 1;
@@ -62,7 +63,7 @@
             content: "";
 
             border-radius: 2px;
-            background-color: #037693;
+            background-color: $primary-color;
 
             align-self: flex-end;
             order: 2;
@@ -70,7 +71,7 @@
     }
 
     &_header {
-        color: #037693;
+        color: $primary-color;
 
         font-size: 65.5px;
     }

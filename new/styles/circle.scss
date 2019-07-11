@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .circle {
     display: flex;
     flex-direction: column-reverse;
@@ -25,7 +27,7 @@
         text-align: center;
         white-space: nowrap;
 
-        color: #000000;
+        color: $dark-secondary-color;
 
         font-size: 25px;
 
@@ -59,7 +61,7 @@
         content: "";
 
         color: inherit;
-        border: 2px solid #ffffff;
+        border: 2px solid $bright-main-color;
         border-radius: 50%;
         background-color: currentColor;
 
@@ -67,17 +69,14 @@
     }
 
     &_green {
-        color: #4ca59a;
-        background-color: #4ca59a00;
+        color: $audience-color;
     }
 
     &_red {
-        color: #f26250;
-        background-color: #f2625000;
+        color: $hours-color;
     }
 
     &_orange {
-        color: #f0a765;
-        background-color: #f0a76500;
+        color: $event-color;
     }
 }

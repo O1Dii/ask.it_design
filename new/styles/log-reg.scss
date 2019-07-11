@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.log-reg{
+  &__icon-text-container{
+    display: inline-block;
+    margin: auto;
+  }
+
+  &__text{
+    color: $bright-main-color;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  &__icon{
+    height: 27px;
+    display: flex;
+    justify-self: center;
+    margin: auto;
+  }
+}

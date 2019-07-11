@@ -7,6 +7,14 @@
 @import "styles/about-us.scss";
 @import "styles/logo.scss";
 @import "styles/circle.scss";
+@import "styles/nav.scss";
+@import "styles/nav-list.scss";
+@import "styles/log-reg.scss";
+
+a{
+  text-decoration: none;
+  color: $bright-main-color;
+}
 
 *{
   font-family: 'Lato', sans-serif;
