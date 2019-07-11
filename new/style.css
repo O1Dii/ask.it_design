@@ -233,11 +233,11 @@
     border-radius: 50%;
     background-color: currentColor;
     order: 3; }
-  .circle_green {
+  .circle_audience {
     color: #4ca59a; }
-  .circle_red {
+  .circle_hours {
     color: #f26250; }
-  .circle_orange {
+  .circle_event {
     color: #f0a765; }
 
 .nav {
