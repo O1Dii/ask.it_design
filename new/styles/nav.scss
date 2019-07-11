@@ -1,34 +1,40 @@
 @import "variables.scss";
 
 .nav {
-  background-color: $dark-main-color;
-  width: 100%;
-  display: flex;
-  padding-left: 200px;
-  padding-right: 200px;
-
-  &__icon {
-    margin: 15px 70px;
-    height: 132px;
-  }
-
-  &__list {
-    height: 100%;
     display: flex;
-    margin: 0 0 0 50px;
-    padding: 0;
-  }
 
-  &__log-reg {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 0 40px;
-    padding: 0;
-  }
+    width: 100%;
+    padding-right: 200px;
+    padding-left: 200px;
 
-  &__list-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
+    background-color: $dark-main-color;
+
+    &__icon {
+        height: 132px;
+        margin: 15px 70px;
+    }
+
+    &__list {
+        display: flex;
+
+        height: 100%;
+        margin: 0 0 0 50px;
+        padding: 0;
+    }
+
+    &__log-reg {
+        display: flex;
+
+        width: 200px;
+        margin: 0 0 0 40px;
+        padding: 0;
+
+        justify-content: space-between;
+    }
+
+    &__list-container {
+        display: flex;
+
+        justify-content: space-evenly;
+    }
 }
