@@ -1,58 +1,77 @@
-.title{
-  color: #ffffff;
-  font-size: 65.5px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  line-height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  &_big-lines {
-    &::after {
-      position: relative;
-      top: -16px;
-      font-size: 0;
-      content: url("../img/lines.png");
-      display: block;
-      align-self: flex-end;
-      height: 7px;
-    }
-  }
-
-  &_small-lines{
+.title {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 
-    &::after{
-      margin-top: 10px;
-      align-self: flex-end;
-      content: "";
-      width: 80px;
-      height: 5px;
-      border-radius: 2px;
-      background-color: #037693;
-      order: 1;
-    }
+    margin: 0;
+    padding: 0;
 
-    &::before{
-      align-self: flex-end;
-      content: "";
-      position: relative;
-      top: -5px;
-      left: -95px;
-      width: 10px;
-      height: 5px;
-      border-radius: 2px;
-      background-color: #037693;
-      order: 2;
-    }
-  }
+    text-align: center;
 
-  &_header{
-    color: #037693;
+    color: #ffffff;
+
     font-size: 65.5px;
-  }
+    line-height: 70px;
+
+    justify-content: flex-end;
+
+    &_big-lines {
+        &::after {
+            position: relative;
+            top: -16px;
+
+            display: block;
+
+            height: 7px;
+
+            content: url("../img/lines.png");
+
+            font-size: 0;
+
+            align-self: flex-end;
+        }
+    }
+
+    &_small-lines {
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &::after {
+            width: 80px;
+            height: 5px;
+            margin-top: 10px;
+
+            content: "";
+
+            border-radius: 2px;
+            background-color: #037693;
+
+            align-self: flex-end;
+            order: 1;
+        }
+
+        &::before {
+            position: relative;
+            top: -5px;
+            left: -95px;
+
+            width: 10px;
+            height: 5px;
+
+            content: "";
+
+            border-radius: 2px;
+            background-color: #037693;
+
+            align-self: flex-end;
+            order: 2;
+        }
+    }
+
+    &_header {
+        color: #037693;
+
+        font-size: 65.5px;
+    }
 }

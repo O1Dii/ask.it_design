@@ -1,76 +1,87 @@
-.about-us{
+.about-us {
+    &__logo-container {
+        width: 20%;
+    }
 
-  &__logo-container{
-    width: 20%;
-  }
+    &__logo {
+        box-sizing: border-box;
+        width: 330px;
+        min-width: auto;
+        min-width: fit-content;
+        height: 65px;
+        margin-top: 132px;
+        margin-left: 25px;
+    }
 
-  &__logo{
-    margin-left: 25px;
-    margin-top: 132px;
-    width: 330px;
-    height: 65px;
-    min-width: auto;
-    min-width: fit-content;
-    box-sizing: border-box;
-  }
+    &__title-logo-container {
+        display: flex;
+    }
 
-  &__title-logo-container{
-    display: flex;
-  }
+    &__title-container {
+        width: 60%;
+    }
 
-  &__title-container{
-    width: 60%;
-  }
+    &__header-title {
+        width: intrinsic;
+        width:    -moz-max-content;
+        width: -webkit-max-content;
+        margin: 115px auto auto;
+        padding-left: 40px;
 
-  &__header-title{
-    width: intrinsic;
-    width: -moz-max-content;
-    width: -webkit-max-content;
-    text-align: center;
-    letter-spacing: 4.5px;
-    font-weight: 100;
-    padding-left: 40px;
-    margin: 115px auto auto;
-    align-self: center;
-  }
+        text-align: center;
+        letter-spacing: 4.5px;
 
-  &__title{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: start;
-    color: #037693;
-  }
+        font-weight: 100;
 
-  &__subtitle {
-    margin: 0 0 34px;
-    font-size: 34px;
-    letter-spacing: 1.4px;
-    line-height: 33px;
-    color: #037693;
-  }
+        align-self: center;
+    }
 
-  &__description{
-    margin: 0 0 28px;
-  }
+    &__title {
+        margin-top: 30px;
+        margin-bottom: 10px;
 
-  &__content{
-    padding-left: 310px;
-    padding-right: 100px;
-    display: flex;
-  }
+        text-align: start;
 
-  &__text-container{
-    display: flex;
-    flex-direction: column;
-    width: 48.5%;
-  }
+        color: #037693;
+    }
 
-  &__stats{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 25px;
-    width: 45%;
-    margin-top: -7px;
-    height: 305px;
-  }
+    &__subtitle {
+        margin: 0 0 34px;
+
+        letter-spacing: 1.4px;
+
+        color: #037693;
+
+        font-size: 34px;
+        line-height: 33px;
+    }
+
+    &__description {
+        margin: 0 0 28px;
+    }
+
+    &__content {
+        display: flex;
+
+        padding-right: 100px;
+        padding-left: 310px;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+
+        width: 48.5%;
+    }
+
+    &__stats {
+        display: flex;
+
+        width: 45%;
+        height: 305px;
+        margin-top: -7px;
+        margin-left: 25px;
+
+        justify-content: space-evenly;
+    }
 }
