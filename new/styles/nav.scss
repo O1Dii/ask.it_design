@@ -4,37 +4,38 @@
     display: flex;
 
     width: 100%;
-    padding-right: 200px;
-    padding-left: 200px;
 
     background-color: $dark-main-color;
 
     &__icon {
         height: 132px;
-        margin: 15px 70px;
+        margin: 15px 6.5% 15px 14.5%;
     }
 
     &__list {
         display: flex;
 
+        width: 100%;
         height: 100%;
-        margin: 0 0 0 50px;
-        padding: 0;
-    }
-
-    &__log-reg {
-        display: flex;
-
-        width: 200px;
-        margin: 0 0 0 40px;
+        margin: 0;
         padding: 0;
 
         justify-content: space-between;
     }
 
     &__list-container {
+        margin: 0;
+
+        flex-grow: 1;
+    }
+
+    &__log-reg {
         display: flex;
 
-        justify-content: space-evenly;
+        width: 11%;
+        margin: 0 8.5% 0 3%;
+        padding: 0;
+
+        justify-content: space-between;
     }
 }

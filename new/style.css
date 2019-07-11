@@ -1,8 +1,8 @@
 .button {
   padding: 7px 13px;
   white-space: nowrap;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   background-color: transparent;
   font-size: 25px;
   font-weight: 400;
@@ -10,7 +10,7 @@
   .button:focus {
     color: #037693;
     outline: none;
-    background-color: #fff; }
+    background-color: #ffffff; }
 
 .buttons-container {
   display: flex;
@@ -21,7 +21,7 @@
     padding-left: 20px; }
 
 .subtitle {
-  color: #fff;
+  color: #ffffff;
   font-size: 38.5px;
   font-weight: 200; }
 
@@ -39,7 +39,7 @@
   justify-content: space-between; }
   .interaction__title {
     margin: 0;
-    text-shadow: 0 5px 5px #000; }
+    text-shadow: 0 5px 5px #000000; }
   .interaction__image {
     width: 420px;
     height: 690px; }
@@ -59,7 +59,7 @@
   flex-direction: column;
   padding: 0;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   font-size: 65.5px;
   line-height: 70px;
   justify-content: flex-end; }
@@ -207,7 +207,7 @@
     margin-top: 15px;
     text-align: center;
     white-space: nowrap;
-    color: #000;
+    color: #000000;
     font-size: 25px;
     order: 1; }
   .circle::before {
@@ -229,7 +229,7 @@
     margin: 0 auto;
     content: "";
     color: inherit;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     background-color: currentColor;
     order: 3; }
@@ -241,75 +241,75 @@
     color: #f0a765; }
 
 .nav {
-  background-color: #121111;
-  width: 100%;
   display: flex;
-  padding-left: 200px;
-  padding-right: 200px; }
+  width: 100%;
+  background-color: #121111; }
   .nav__icon {
-    margin: 15px 70px;
-    height: 132px; }
+    height: 132px;
+    margin: 15px 6.5% 15px 14.5%; }
   .nav__list {
+    display: flex;
+    width: 100%;
     height: 100%;
-    display: flex;
-    margin: 0 0 0 50px;
-    padding: 0; }
-  .nav__log-reg {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 0 40px;
-    padding: 0; }
+    margin: 0;
+    padding: 0;
+    justify-content: space-between; }
   .nav__list-container {
+    margin: 0;
+    flex-grow: 1; }
+  .nav__log-reg {
     display: flex;
-    justify-content: space-evenly; }
+    width: 11%;
+    margin: 0 8.5% 0 3%;
+    padding: 0;
+    justify-content: space-between; }
 
-.nav-list {
-  padding: 0; }
-  .nav-list__element {
-    display: inline-flex;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 8px;
-    border-top: 2px solid #000;
-    height: 100%;
-    box-sizing: border-box;
-    min-width: 150px;
-    max-width: 190px; }
-  .nav-list__href {
-    white-space: nowrap;
-    height: 100%;
-    display: flex;
-    align-self: center;
-    text-align: center;
-    margin: auto 15px;
-    align-items: center; }
-  .nav-list__element:hover, .nav-list__element:focus {
-    height: 100%;
-    background-color: #ffffff70;
-    border-top: 2px solid #fff;
-    box-sizing: border-box; }
+.nav-list__element {
+  display: inline-flex;
+  box-sizing: border-box;
+  min-width: 16%;
+  max-width: 20%;
+  height: 100%;
+  padding-bottom: 8px;
+  text-align: center;
+  color: #ffffff;
+  border-top: 2px solid #000000;
+  font-size: 30px;
+  justify-content: center; }
+
+.nav-list__href {
+  display: flex;
+  height: 100%;
+  margin: auto 15px;
+  text-align: center;
+  white-space: nowrap;
+  align-items: center;
+  align-self: center; }
+
+.nav-list__element:hover, .nav-list__element:focus {
+  box-sizing: border-box;
+  height: 100%;
+  border-top: 2px solid #ffffff;
+  background-color: #ffffff70; }
 
 .log-reg__icon-text-container {
   display: inline-block;
   margin: auto; }
 
 .log-reg__text {
-  color: #fff;
-  font-size: 15px;
-  margin: 0; }
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px; }
 
 .log-reg__icon {
-  height: 27px;
   display: flex;
-  justify-self: center;
-  margin: auto; }
+  height: 27px;
+  margin: auto auto 5px;
+  justify-self: center; }
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #ffffff; }
 
 * {
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
