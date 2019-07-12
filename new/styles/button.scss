@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.button {
+    padding: 7px 13px;
+
+    white-space: nowrap;
+
+    color: $bright-main-color;
+    border: 2px solid $bright-main-color;
+    background-color: transparent;
+
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+
+    &:focus {
+        color: $primary-color;
+        outline: none;
+        background-color: $bright-main-color;
+    }
+}

@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-right: 20px;
+    padding-left: 20px;
+
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    letter-spacing: 3.5px;
+
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-right: none;
+
+    font-size: 35px;
+    font-weight: 100;
+
+    align-items: center;
+    flex-wrap: wrap;
+
+    &::before {
+        height: 2px;
+
+        content: "";
+
+        background-color: $primary-color;
+
+        flex-grow: 1;
+        order: 1;
+    }
+
+    &::after {
+        width: 18px;
+        height: 18px;
+
+        content: "";
+
+        border-radius: 50%;
+        background-color: $primary-color;
+
+        order: 2;
+    }
+}

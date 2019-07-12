@@ -1,0 +1,22 @@
+@import "styles/button.scss";
+@import "styles/buttons-container.scss";
+@import "styles/subtitle.scss";
+@import "styles/description.scss";
+@import "styles/interaction.scss";
+@import "styles/title.scss";
+@import "styles/about-us.scss";
+@import "styles/logo.scss";
+@import "styles/circle.scss";
+@import "styles/nav.scss";
+@import "styles/nav-list.scss";
+@import "styles/log-reg.scss";
+
+a {
+    text-decoration: none;
+
+    color: $bright-main-color;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+}

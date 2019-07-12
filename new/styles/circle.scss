@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+.circle {
+    display: flex;
+    flex-direction: column-reverse;
+
+    height: 100%;
+
+    border-color: inherit;
+    border-bottom: 2px solid;
+
+    justify-content: center;
+
+    &__title {
+        margin: 25px auto 0;
+
+        color: inherit;
+
+        font-size: 53px;
+
+        order: 2;
+    }
+
+    &__text {
+        margin-top: 15px;
+
+        text-align: center;
+        white-space: nowrap;
+
+        color: $dark-secondary-color;
+
+        font-size: 25px;
+
+        order: 1;
+    }
+
+    &::before {
+        position: relative;
+        top: 62.5px;
+
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+
+        content: "";
+
+        opacity: 0.5;
+        color: inherit;
+        border-radius: 50%;
+        background-color: currentColor;
+
+        order: 4;
+    }
+
+    &::after {
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+
+        content: "";
+
+        color: inherit;
+        border: 2px solid $bright-main-color;
+        border-radius: 50%;
+        background-color: currentColor;
+
+        order: 3;
+    }
+
+    &_audience {
+        color: $audience-color;
+    }
+
+    &_hours {
+        color: $hours-color;
+    }
+
+    &_event {
+        color: $event-color;
+    }
+}
